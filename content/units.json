@@ -1,0 +1,1469 @@
+[
+  {
+    "id": "g1-u06",
+    "grade": 1,
+    "term": 1,
+    "number": 6,
+    "slug": "be-verbs",
+    "title": "用 am、is、are 介紹自己",
+    "en": "Meet the be verbs",
+    "topic": "Be verbs",
+    "short": "說說我是誰、感覺如何。",
+    "tag": "從完整句開始",
+    "color": "blue",
+    "duration": "4 個學習小節",
+    "origin": "G1 教材主題的新增教學設計",
+    "goals": [
+      "依主詞選擇 am、is、are。",
+      "用完整句介紹人物或描述感受。",
+      "寫出 2–3 句簡短介紹。"
+    ],
+    "prereq_text": "先認識 I、you、he、she、it、we、they。讀字還不熟時，可以請成人讀給你聽，再口頭回答。",
+    "support": [
+      [
+        "主格代名詞",
+        "I＝我；you＝你／你們；he＝他；she＝她；it＝它；we＝我們；they＝他們。"
+      ],
+      [
+        "句子的兩個部分",
+        "先說「誰」，再說他是誰或感覺如何。I | am happy. 不要只留下 I happy."
+      ]
+    ],
+    "pre": [
+      {
+        "prompt": "哪一個字表示「我」？",
+        "options": [
+          "I",
+          "he",
+          "they"
+        ],
+        "answer": 0,
+        "why": "I 表示「我」。英文裡的 I 都要大寫。",
+        "id": "g1-u06-pre-1"
+      },
+      {
+        "prompt": "Mia and Ben 指兩個人，可以用哪個字代替？",
+        "options": [
+          "it",
+          "they",
+          "she"
+        ],
+        "answer": 1,
+        "why": "they 可以代替兩個或更多的人。",
+        "id": "g1-u06-pre-2"
+      }
+    ],
+    "scene_title": "認識新朋友",
+    "scene_intro": "第一天上學，Mia 和 Ben 在教室裡打招呼。先讀對話，找找每句中的 am、is、are。",
+    "scene": [
+      [
+        "Mia",
+        "I am Mia. I am happy."
+      ],
+      [
+        "Ben",
+        "I am Ben. You are my friend."
+      ],
+      [
+        "一起說",
+        "We are friends!"
+      ]
+    ],
+    "notice": [
+      [
+        "誰在介紹自己？",
+        "Mia 和 Ben 都用 I am 介紹自己。"
+      ],
+      [
+        "主詞換成 we，哪個字也跟著換了？",
+        "am 換成 are：We are friends."
+      ]
+    ],
+    "rules": [
+      [
+        "01",
+        "I 和 am 是好朋友",
+        "介紹自己，用 I am。am 後面可以接名字或感受。",
+        "I am Mia. / I am happy."
+      ],
+      [
+        "02",
+        "一個 he、she、it，用 is",
+        "說一個人的身分或感受，可用 he is、she is；說一個物品，可用 it is。",
+        "He is Ben. / She is happy. / It is blue."
+      ],
+      [
+        "03",
+        "you、we、they，用 are",
+        "不論 you 表示一個人或很多人，都用 are。we 和 they 也用 are。",
+        "You are kind. / We are friends. / They are happy."
+      ]
+    ],
+    "vocab": [
+      [
+        "happy",
+        "開心的"
+      ],
+      [
+        "kind",
+        "友善的"
+      ],
+      [
+        "friends",
+        "朋友們"
+      ]
+    ],
+    "contrasts": [
+      [
+        "I am happy.",
+        "She is happy.",
+        "心情沒有改變；主詞從 I 換成 she，am 要換成 is。"
+      ],
+      [
+        "She is my friend.",
+        "You are my friend.",
+        "兩句都可以談一個人，但 she 用 is、you 用 are。"
+      ],
+      [
+        "The book is blue.",
+        "The books are blue.",
+        "一本書用 is；多本書用 are。留意名詞的 -s。"
+      ],
+      [
+        "He is in the classroom.",
+        "They are in the classroom.",
+        "位置相同，但一個 he 用 is，多個 they 用 are。"
+      ],
+      [
+        "I am a student.",
+        "We are students.",
+        "一個人自我介紹用 I am a student；一群人用 We are students。"
+      ]
+    ],
+    "mistakes": [
+      [
+        "I happy.",
+        "I am happy.",
+        "描述感受時，這個句型需要 be。不要漏掉 am。"
+      ],
+      [
+        "You is kind.",
+        "You are kind.",
+        "you 固定搭配 are，不是 is。"
+      ]
+    ],
+    "groups": [
+      [
+        "找一找",
+        [
+          {
+            "prompt": "I am Mia. 哪一個字是 be verb？",
+            "options": [
+              "I",
+              "am",
+              "Mia"
+            ],
+            "answer": 1,
+            "why": "am 是這句的 be verb，連接 I 和 Mia。",
+            "id": "g1-u06-q-1-1"
+          },
+          {
+            "prompt": "She is happy. 這句在說誰？",
+            "options": [
+              "我",
+              "她",
+              "我們"
+            ],
+            "answer": 1,
+            "why": "She 表示她；is 後面的 happy 描述她的感受。",
+            "id": "g1-u06-q-1-2"
+          },
+          {
+            "prompt": "哪一句是完整的介紹？",
+            "options": [
+              "I Mia.",
+              "I am Mia.",
+              "Am Mia."
+            ],
+            "answer": 1,
+            "why": "I am Mia. 有主詞 I，也有 am 連接名字。",
+            "id": "g1-u06-q-1-3"
+          }
+        ]
+      ],
+      [
+        "選對意思與形式",
+        [
+          {
+            "prompt": "兩位小朋友一起介紹自己，哪一句適合？",
+            "options": [
+              "We are friends.",
+              "We is friends.",
+              "We am friends."
+            ],
+            "answer": 0,
+            "why": "We 表示我們，搭配 are。",
+            "id": "g1-u06-q-2-1"
+          },
+          {
+            "prompt": "你只對一個朋友說話，應該說：",
+            "options": [
+              "You am kind.",
+              "You is kind.",
+              "You are kind."
+            ],
+            "answer": 2,
+            "why": "you 表示一個人時也用 are。",
+            "id": "g1-u06-q-2-2"
+          },
+          {
+            "prompt": "Mia 很開心。哪一句符合意思？",
+            "options": [
+              "She is happy.",
+              "He is happy.",
+              "They are happy."
+            ],
+            "answer": 0,
+            "why": "題目中的 Mia 以 she 指稱，she 搭配 is。",
+            "id": "g1-u06-q-2-3"
+          }
+        ]
+      ],
+      [
+        "自己完成",
+        [
+          {
+            "prompt": "I ___ Ben.",
+            "options": [
+              "are",
+              "am",
+              "is"
+            ],
+            "answer": 1,
+            "why": "I 搭配 am。",
+            "id": "g1-u06-q-3-1"
+          },
+          {
+            "prompt": "They ___ happy.",
+            "options": [
+              "is",
+              "am",
+              "are"
+            ],
+            "answer": 2,
+            "why": "they 搭配 are。",
+            "id": "g1-u06-q-3-2"
+          },
+          {
+            "prompt": "It ___ blue.",
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "answer": 0,
+            "why": "it 搭配 is。",
+            "id": "g1-u06-q-3-3"
+          }
+        ]
+      ]
+    ],
+    "open": [
+      {
+        "prompt": "修正這一句：He are Ben.",
+        "sample": "He is Ben.",
+        "why": "he 搭配 is。",
+        "id": "g1-u06-open-1"
+      },
+      {
+        "prompt": "用 we 和 friends 組成完整句。",
+        "sample": "We are friends.",
+        "why": "句首 W 大寫，we 搭配 are，句尾加句號。",
+        "id": "g1-u06-open-2"
+      },
+      {
+        "prompt": "用 I am 寫一句感受。",
+        "sample": "I am happy.",
+        "why": "可用其他已知感受詞。要有 I、am 和描述詞，不只有唯一答案。",
+        "id": "g1-u06-open-3"
+      }
+    ],
+    "write": {
+      "title": "一張「認識我」小卡",
+      "prompt": "向新朋友介紹自己。用 2–3 句說名字、感受，再介紹一位朋友。可以寫虛構人物，也可以先說給成人聽。",
+      "frames": [
+        "I am ____.",
+        "I am ____.",
+        "He / She is ____."
+      ],
+      "sample": "I am Mia. I am happy. She is my friend.",
+      "checklist": [
+        "我有用 I am 介紹自己。",
+        "我有依主詞選 am、is 或 are。",
+        "每句開頭大寫，結尾有句號。"
+      ],
+      "rubric": "能看懂你在介紹誰，並在每個需要 be 的句子中使用適當形式，就達成本課目標。拼字可請成人協助。"
+    },
+    "exit": [
+      {
+        "prompt": "She ___ my friend.",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "answer": 1,
+        "why": "she 搭配 is。",
+        "id": "g1-u06-exit-1"
+      },
+      {
+        "prompt": "哪一句需要修改？",
+        "options": [
+          "I am happy.",
+          "You are kind.",
+          "They is friends."
+        ],
+        "answer": 2,
+        "why": "They is friends. 應改為 They are friends.",
+        "id": "g1-u06-exit-2"
+      },
+      {
+        "prompt": "你和朋友一起說「我們很開心」，可以說：",
+        "options": [
+          "We are happy.",
+          "I is happy.",
+          "We am happy."
+        ],
+        "answer": 0,
+        "why": "we 搭配 are，happy 描述我們的感受。",
+        "id": "g1-u06-exit-3"
+      }
+    ],
+    "adult": "讓孩子先指主詞，再找 be；一次只問一個原因。若不熟代名詞，先用姓名與 I／you 練習。這課只教 be 的肯定句，暫不加入進行式或問句變化。",
+    "next_note": "完整課程的下一步是 G1-U07：組成完整句子。本次先開放三個示範單元。",
+    "usage_groups": [
+      {
+        "id": "am",
+        "title": "am：說自己的事",
+        "form": "I + am + 身分、年齡、感受、特徵或位置",
+        "note": "說話的人談自己，主詞用 I，be 就選 am。以下五種情境都能用同一個句型。",
+        "cases": [
+          {
+            "context": "介紹身分",
+            "use": "第一次見面，告訴別人自己是學生。",
+            "example": "I am a student.",
+            "translation": "我是一名學生。",
+            "focus": "am"
+          },
+          {
+            "context": "說出年齡",
+            "use": "對方問你幾歲，用 be 接年齡。",
+            "example": "I am seven years old.",
+            "translation": "我七歲。",
+            "focus": "am"
+          },
+          {
+            "context": "表達感受",
+            "use": "說說自己現在的心情。",
+            "example": "I am happy.",
+            "translation": "我很開心。",
+            "focus": "am"
+          },
+          {
+            "context": "描述特徵",
+            "use": "比較高矮之前，先說自己的特徵。",
+            "example": "I am tall.",
+            "translation": "我個子高。",
+            "focus": "am"
+          },
+          {
+            "context": "說明位置",
+            "use": "讓朋友知道你在哪裡。",
+            "example": "I am in the classroom.",
+            "translation": "我在教室裡。",
+            "focus": "am"
+          }
+        ]
+      },
+      {
+        "id": "is",
+        "title": "is：說一個人或一件事物",
+        "form": "He / She / It / 單數名詞 + is + 描述",
+        "note": "談一個人或一件事物，常用 is。名字和單數名詞也能當主詞；you 與 I 要另外記住。",
+        "cases": [
+          {
+            "context": "介紹一個人",
+            "use": "讓朋友知道 Mia 是你的朋友。",
+            "example": "Mia is my friend.",
+            "translation": "Mia 是我的朋友。",
+            "focus": "is"
+          },
+          {
+            "context": "說一個人的年齡",
+            "use": "延續談 Ben，用 he 代替名字。",
+            "example": "He is seven years old.",
+            "translation": "他七歲。",
+            "focus": "is"
+          },
+          {
+            "context": "描述她的感受",
+            "use": "Mia 看起來很開心，用 she 接著描述。",
+            "example": "She is happy.",
+            "translation": "她很開心。",
+            "focus": "is"
+          },
+          {
+            "context": "描述物品特徵",
+            "use": "談一個球的顏色，主詞仍是單數。",
+            "example": "The ball is red.",
+            "translation": "這顆球是紅色的。",
+            "focus": "is"
+          },
+          {
+            "context": "指出物品位置",
+            "use": "你和朋友正在找一本書，用 it 指這本書。",
+            "example": "It is on the desk.",
+            "translation": "它在書桌上。",
+            "focus": "is"
+          }
+        ]
+      },
+      {
+        "id": "are",
+        "title": "are：對你說，也談我們和他們",
+        "form": "You / We / They / 複數名詞 + are + 描述",
+        "note": "you 即使只指一個人，也用 are；we、they 與複數名詞也用 are。",
+        "cases": [
+          {
+            "context": "對一個人說明關係",
+            "use": "對一位新朋友說「你是我的朋友」。",
+            "example": "You are my friend.",
+            "translation": "你是我的朋友。",
+            "focus": "are"
+          },
+          {
+            "context": "介紹團體身分",
+            "use": "你和同學一起介紹自己。",
+            "example": "We are students.",
+            "translation": "我們是學生。",
+            "focus": "are"
+          },
+          {
+            "context": "說團體的感受",
+            "use": "兩位朋友都很開心，用 they 指他們。",
+            "example": "They are happy.",
+            "translation": "他們很開心。",
+            "focus": "are"
+          },
+          {
+            "context": "描述多個物品",
+            "use": "桌上的兩本書都是藍色的。",
+            "example": "The books are blue.",
+            "translation": "這些書是藍色的。",
+            "focus": "are"
+          },
+          {
+            "context": "指出多個物品的位置",
+            "use": "幫朋友找桌上的鉛筆。",
+            "example": "The pencils are on the desk.",
+            "translation": "這些鉛筆在書桌上。",
+            "focus": "are"
+          }
+        ]
+      }
+    ],
+    "usage_intro": "每一組有五種使用情境與五個例句。先看什麼時候會說這句話，再讀例句與中文意思，留意標出的文法形式。可以分次閱讀，不必一次背完。",
+    "content_version": "0.2"
+  },
+  {
+    "id": "g3-u09",
+    "grade": 3,
+    "term": 2,
+    "number": 9,
+    "slug": "comparatives",
+    "title": "比較兩樣東西，說出你的選擇",
+    "en": "Which one would you choose?",
+    "topic": "Comparatives",
+    "short": "用比較級，讓選擇有理由。",
+    "tag": "讓描述更精確",
+    "color": "teal",
+    "duration": "4 個學習小節",
+    "origin": "G3 自主延伸設計",
+    "goals": [
+      "找出兩個比較對象與比較的特徵。",
+      "使用 -er 或 more 及 than 寫出比較句。",
+      "寫 4–5 句簡短的選擇說明。"
+    ],
+    "prereq_text": "先會用形容詞描述物品，以及用 is／are 寫句子。下面先做兩題暖身；不熟的地方可展開「先備小補充」。",
+    "support": [
+      [
+        "形容詞描述特徵",
+        "在 a heavy bag 中，heavy 描述袋子很重。big、small、long 也都是描述特徵的詞。"
+      ],
+      [
+        "單數物品搭配 is",
+        "This bag is blue. 說的是一個袋子，所以用 is。比較時仍然需要 be。"
+      ]
+    ],
+    "pre": [
+      {
+        "prompt": "This bag ___ blue.",
+        "options": [
+          "is",
+          "are",
+          "am"
+        ],
+        "answer": 0,
+        "why": "This bag 指一個袋子，搭配 is。",
+        "id": "g3-u09-pre-1"
+      },
+      {
+        "prompt": "a heavy bag 裡，哪個字描述袋子的特徵？",
+        "options": [
+          "a",
+          "heavy",
+          "bag"
+        ],
+        "answer": 1,
+        "why": "heavy 是形容詞，表示重的。",
+        "id": "g3-u09-pre-2"
+      }
+    ],
+    "scene_title": "選一個適合的書包",
+    "scene_intro": "兩個書包都裝好同樣的用品。讀一讀重量與價格，再決定你想選哪一個。",
+    "scene": [
+      [
+        "Bag A",
+        "1 kg · 200 dollars"
+      ],
+      [
+        "Bag B",
+        "3 kg · 400 dollars"
+      ]
+    ],
+    "notice": [
+      [
+        "哪個袋子比較重？",
+        "Bag B：3 kg 比 1 kg 重。"
+      ],
+      [
+        "哪個袋子比較便宜？",
+        "Bag A：200 dollars 比 400 dollars 便宜。"
+      ]
+    ],
+    "rules": [
+      [
+        "01",
+        "先說你比較哪兩樣東西",
+        "使用「A + be + 比較級 + than + B」。than 後面放另一個比較對象。",
+        "Bag B is heavier than Bag A."
+      ],
+      [
+        "02",
+        "常見短形容詞，加 -er",
+        "cheap → cheaper；long → longer；large → larger。這課也練習 big → bigger、heavy → heavier。",
+        "Bag A is cheaper than Bag B."
+      ],
+      [
+        "03",
+        "有些形容詞使用 more",
+        "expensive → more expensive；difficult → more difficult。不要把 more 和 bigger 放在一起。good 的比較級是 better，要特別記住。",
+        "Bag B is more expensive than Bag A."
+      ]
+    ],
+    "vocab": [
+      [
+        "heavy / light",
+        "重的／輕的"
+      ],
+      [
+        "cheap / expensive",
+        "便宜的／昂貴的"
+      ],
+      [
+        "choose",
+        "選擇"
+      ]
+    ],
+    "contrasts": [
+      [
+        "This bag is heavy.",
+        "This bag is heavier than that bag.",
+        "heavy 描述一個袋子；heavier than 比較兩個袋子。"
+      ],
+      [
+        "Bag A is cheaper than Bag B.",
+        "Bag B is more expensive than Bag A.",
+        "在 A 售價 200、B 售價 400 的情境中，兩句都對；換個比較方向，仍可表達同一組資料。"
+      ],
+      [
+        "This box is bigger than that box.",
+        "This puzzle is more difficult than that puzzle.",
+        "big 用 bigger，difficult 用 more difficult，不能把兩種變化疊加。"
+      ],
+      [
+        "This pen is good.",
+        "This pen is better than that pen.",
+        "good 是原級，better 是比較級；比較時不要寫成 gooder。"
+      ],
+      [
+        "Bag B is heavier than Bag A.",
+        "Bag A is heavier than Bag B.",
+        "兩句文法形式都成立，但在 B 重 3 公斤、A 重 1 公斤的情境中，只有第一句符合資料。"
+      ]
+    ],
+    "mistakes": [
+      [
+        "Bag B is more heavier than Bag A.",
+        "Bag B is heavier than Bag A.",
+        "heavier 已表示比較，不再加 more。"
+      ],
+      [
+        "Bag A cheaper than Bag B.",
+        "Bag A is cheaper than Bag B.",
+        "比較句仍需要 be；Bag A 是單數，所以用 is。"
+      ]
+    ],
+    "groups": [
+      [
+        "找出比較",
+        [
+          {
+            "prompt": "Bag B is heavier than Bag A. 哪個字是比較級？",
+            "options": [
+              "is",
+              "heavier",
+              "Bag A"
+            ],
+            "answer": 1,
+            "why": "heavier 是 heavy 的比較級。",
+            "id": "g3-u09-q-1-1"
+          },
+          {
+            "prompt": "Bag A is cheaper than Bag B. 比較的特徵是什麼？",
+            "options": [
+              "價格",
+              "顏色",
+              "長度"
+            ],
+            "answer": 0,
+            "why": "cheaper 表示比較便宜，談的是價格。",
+            "id": "g3-u09-q-1-2"
+          },
+          {
+            "prompt": "哪一句清楚比較兩個物品？",
+            "options": [
+              "This bag is blue.",
+              "That bag is heavy.",
+              "This bag is lighter than that bag."
+            ],
+            "answer": 2,
+            "why": "lighter than 連接兩個比較對象。",
+            "id": "g3-u09-q-1-3"
+          }
+        ]
+      ],
+      [
+        "依資料判斷",
+        [
+          {
+            "prompt": "Bag A：1 kg；Bag B：3 kg。哪句符合資料？",
+            "options": [
+              "Bag A is heavier than Bag B.",
+              "Bag B is heavier than Bag A."
+            ],
+            "answer": 1,
+            "why": "B 是 3 kg，A 是 1 kg，所以 B 較重。",
+            "id": "g3-u09-q-2-1"
+          },
+          {
+            "prompt": "Bag A：200 dollars；Bag B：400 dollars。哪句符合資料？",
+            "options": [
+              "Bag A is cheaper than Bag B.",
+              "Bag B is cheaper than Bag A."
+            ],
+            "answer": 0,
+            "why": "A 的價格較低，所以 A 較便宜。",
+            "id": "g3-u09-q-2-2"
+          },
+          {
+            "prompt": "兩支尺：A 為 30 cm，B 為 15 cm。哪句正確？",
+            "options": [
+              "Ruler A is shorter than Ruler B.",
+              "Ruler A is longer than Ruler B."
+            ],
+            "answer": 1,
+            "why": "30 cm 比 15 cm 長，因此 A 較長。",
+            "id": "g3-u09-q-2-3"
+          }
+        ]
+      ],
+      [
+        "選擇比較形式",
+        [
+          {
+            "prompt": "Bag B is ___ than Bag A. (heavy)",
+            "options": [
+              "heavyer",
+              "more heavier",
+              "heavier"
+            ],
+            "answer": 2,
+            "why": "heavy 的常用比較形式是 heavier：y 改為 i，再加 er。",
+            "id": "g3-u09-q-3-1"
+          },
+          {
+            "prompt": "Bag A is ___ than Bag B. (cheap)",
+            "options": [
+              "cheaper",
+              "more cheaper",
+              "cheapest"
+            ],
+            "answer": 0,
+            "why": "cheap 的比較級是 cheaper；本課比較兩者，不使用最高級。",
+            "id": "g3-u09-q-3-2"
+          },
+          {
+            "prompt": "Bag B is ___ than Bag A. (expensive)",
+            "options": [
+              "expensiver",
+              "more expensive",
+              "more expensiver"
+            ],
+            "answer": 1,
+            "why": "expensive 使用 more expensive。",
+            "id": "g3-u09-q-3-3"
+          }
+        ]
+      ]
+    ],
+    "open": [
+      {
+        "prompt": "修正這句：This box is more bigger than that box.",
+        "sample": "This box is bigger than that box.",
+        "why": "bigger 已是比較級，刪掉 more。",
+        "id": "g3-u09-open-1"
+      },
+      {
+        "prompt": "Ruler A 長 30 cm，Ruler B 長 15 cm。寫一句比較。",
+        "sample": "Ruler A is longer than Ruler B.",
+        "why": "也接受 Ruler B is shorter than Ruler A.；兩句都符合資料。",
+        "id": "g3-u09-open-2"
+      },
+      {
+        "prompt": "把 heavy 改成比較形式，完整比較 B 袋（3 kg）與 A 袋（1 kg）。",
+        "sample": "Bag B is heavier than Bag A.",
+        "why": "須有兩個對象、is、heavier 與 than，且意思符合資料。",
+        "id": "g3-u09-open-3"
+      }
+    ],
+    "write": {
+      "title": "幫朋友選一個書包",
+      "prompt": "使用上面的重量與價格資料，寫 4–5 句幫朋友作選擇。至少兩句比較句，最後寫你選哪個袋子。沒有唯一正確的選擇，理由要符合資料。",
+      "frames": [
+        "Bag __ is ____ than Bag __.",
+        "Bag __ is more ____ than Bag __.",
+        "I choose Bag __."
+      ],
+      "sample": "Bag A is cheaper than Bag B. Bag A is lighter than Bag B. Bag B is more expensive than Bag A. I choose Bag A.",
+      "checklist": [
+        "我說清楚在比較哪兩樣東西。",
+        "比較形式和 be 都正確。",
+        "比較符合重量或價格資料。",
+        "我的選擇和理由能連起來。"
+      ],
+      "rubric": "檢查意思、比較形式及句子完整性。可從較重／較輕、較貴／較便宜任一角度描述，不限定與示例一樣。"
+    },
+    "exit": [
+      {
+        "prompt": "A book：2 kg；B book：1 kg。Book A is ___ than Book B.",
+        "options": [
+          "heavier",
+          "lighter",
+          "cheaper"
+        ],
+        "answer": 0,
+        "why": "題目提供重量；A 較重，所以是 heavier。",
+        "id": "g3-u09-exit-1"
+      },
+      {
+        "prompt": "哪一句需要修改？",
+        "options": [
+          "This box is bigger than that box.",
+          "This box is more bigger than that box.",
+          "This box is smaller than that box."
+        ],
+        "answer": 1,
+        "why": "more bigger 重複標示比較，應保留 bigger。",
+        "id": "g3-u09-exit-2"
+      },
+      {
+        "prompt": "This game is ___ than that game. (difficult)",
+        "options": [
+          "difficulter",
+          "more difficult",
+          "more difficulter"
+        ],
+        "answer": 1,
+        "why": "difficult 的常用比較形式是 more difficult。",
+        "id": "g3-u09-exit-3"
+      }
+    ],
+    "adult": "先確認孩子讀懂資料，再看形式。不要用圖片大小暗示重量，也不要把不同但合理的比較方向判錯。最高級屬下一單元，這次不測。更長的形容詞規則和例外只逐步加入。",
+    "next_note": "完整課程的下一步是 G3-U10：在一個群體中使用最高級。本次先開放三個示範單元。",
+    "usage_groups": [
+      {
+        "id": "er",
+        "title": "-er 比較級：比較常見特徵",
+        "form": "A + be + 形容詞比較級 + than + B",
+        "note": "每句都比較同一項特徵。常見形式有 tall→taller、long→longer、big→bigger、heavy→heavier、cheap→cheaper。",
+        "cases": [
+          {
+            "context": "比較身高",
+            "use": "Ben 比 Mia 高，描述兩個人的身高差異。",
+            "example": "Ben is taller than Mia.",
+            "translation": "Ben 比 Mia 高。",
+            "focus": "taller than"
+          },
+          {
+            "context": "比較長度",
+            "use": "藍尺長 30 公分，紅尺長 15 公分。",
+            "example": "The blue ruler is longer than the red ruler.",
+            "translation": "藍尺比紅尺長。",
+            "focus": "longer than"
+          },
+          {
+            "context": "比較大小",
+            "use": "一個盒子能裝更多積木，描述兩個盒子的大小。",
+            "example": "This box is bigger than that box.",
+            "translation": "這個盒子比那個盒子大。",
+            "focus": "bigger than"
+          },
+          {
+            "context": "比較重量",
+            "use": "B 袋重 3 公斤，A 袋重 1 公斤。",
+            "example": "Bag B is heavier than Bag A.",
+            "translation": "B 袋比 A 袋重。",
+            "focus": "heavier than"
+          },
+          {
+            "context": "比較價格",
+            "use": "A 袋售價 200 元，B 袋售價 400 元。",
+            "example": "Bag A is cheaper than Bag B.",
+            "translation": "A 袋比 B 袋便宜。",
+            "focus": "cheaper than"
+          }
+        ]
+      },
+      {
+        "id": "more",
+        "title": "more + 形容詞：比較程度",
+        "form": "A + be + more + 形容詞 + than + B",
+        "note": "expensive、difficult、interesting、useful、comfortable 在這些句子中用 more 比較，不再加 -er。這是指定詞例，不是所有長字的唯一規則。",
+        "cases": [
+          {
+            "context": "比較花費",
+            "use": "紅色腳踏車售價較高，說明兩台車的價格差異。",
+            "example": "The red bike is more expensive than the blue bike.",
+            "translation": "紅色腳踏車比藍色腳踏車貴。",
+            "focus": "more expensive than"
+          },
+          {
+            "context": "比較難度",
+            "use": "第二個拼圖需要更多時間與思考。",
+            "example": "This puzzle is more difficult than that puzzle.",
+            "translation": "這個拼圖比那個拼圖難。",
+            "focus": "more difficult than"
+          },
+          {
+            "context": "比較閱讀興趣",
+            "use": "你喜歡這個故事的情節，說出自己的閱讀感受。",
+            "example": "This story is more interesting than that story.",
+            "translation": "這個故事比那個故事有趣。",
+            "focus": "more interesting than"
+          },
+          {
+            "context": "比較實用程度",
+            "use": "新地圖有街名，舊地圖沒有，較能幫助找路。",
+            "example": "The new map is more useful than the old map.",
+            "translation": "新地圖比舊地圖實用。",
+            "focus": "more useful than"
+          },
+          {
+            "context": "比較舒適程度",
+            "use": "試坐兩張椅子後，說出哪張坐起來更舒服。",
+            "example": "This chair is more comfortable than that chair.",
+            "translation": "這張椅子比那張椅子舒服。",
+            "focus": "more comfortable than"
+          }
+        ]
+      },
+      {
+        "id": "better",
+        "title": "good → better：比較好壞",
+        "form": "A + be + better + than + B",
+        "note": "good 的比較級是 better，不是 gooder 或 more better。說「比較好」時，要交代你在意的條件；別人可能有不同選擇。",
+        "cases": [
+          {
+            "context": "選擇書寫工具",
+            "use": "這支筆寫得清楚，另一支容易斷水。",
+            "example": "This pen is better than that pen.",
+            "translation": "這支筆比那支筆好。",
+            "focus": "better than"
+          },
+          {
+            "context": "觀察自己的進步",
+            "use": "第二張畫線條更清楚，和自己的第一張作品比較。",
+            "example": "My second drawing is better than my first drawing.",
+            "translation": "我的第二張畫比第一張好。",
+            "focus": "better than"
+          },
+          {
+            "context": "討論活動計畫",
+            "use": "新計畫留有休息時間，更符合全班需要。",
+            "example": "This plan is better than our first plan.",
+            "translation": "這個計畫比我們的第一個計畫好。",
+            "focus": "better than"
+          },
+          {
+            "context": "修改故事結尾",
+            "use": "新的結尾更清楚交代人物遇到的問題。",
+            "example": "The new ending is better than the old ending.",
+            "translation": "新的結尾比舊的結尾好。",
+            "focus": "better than"
+          },
+          {
+            "context": "挑選閱讀座位",
+            "use": "這個座位光線足，另一個座位較暗。",
+            "example": "This seat is better than that seat.",
+            "translation": "這個座位比那個座位好。",
+            "focus": "better than"
+          }
+        ]
+      }
+    ],
+    "usage_intro": "每一組有五種使用情境與五個例句。先看什麼時候會說這句話，再讀例句與中文意思，留意標出的文法形式。可以分次閱讀，不必一次背完。",
+    "content_version": "0.2"
+  },
+  {
+    "id": "g5-u03",
+    "grade": 5,
+    "term": 1,
+    "number": 3,
+    "slug": "present-perfect",
+    "title": "事情發生在何時，和現在有什麼關係？",
+    "en": "Past events. Present connections.",
+    "topic": "Present perfect vs. simple past",
+    "short": "選對時態，把經驗說清楚。",
+    "tag": "連結時間與意思",
+    "color": "violet",
+    "duration": "4 個學習小節",
+    "origin": "G5 自主延伸設計",
+    "goals": [
+      "分辨明確結束的過去時間與連結現在的經驗。",
+      "在語境中選擇簡單過去式或現在完成式。",
+      "用 for／since 描述持續到現在的狀態。"
+    ],
+    "prereq_text": "這是 G5 的第三單元，假設已接觸 have／has + 過去分詞。若你還沒學過，可先讀下面的形式小補充，再開始。",
+    "support": [
+      [
+        "現在完成式的形式",
+        "I／you／we／they + have + 過去分詞；he／she／it + has + 過去分詞。例如：I have visited Tainan. She has seen that film."
+      ],
+      [
+        "過去式與過去分詞",
+        "規則變化例：visit–visited–visited。常見不規則例：see–saw–seen；go–went–gone。這課把 went 用在特定過去事件，把 been 用在到過某地的經驗。"
+      ],
+      [
+        "先抓時間，不只認字",
+        "yesterday、last year 指向明確已結束的過去；現在完成式則把過去經驗、結果或持續狀態連到現在。"
+      ]
+    ],
+    "pre": [
+      {
+        "prompt": "She ___ visited Tainan.",
+        "options": [
+          "have",
+          "has",
+          "is"
+        ],
+        "answer": 1,
+        "why": "she 搭配 has；has visited 是現在完成式。",
+        "id": "g5-u03-pre-1"
+      },
+      {
+        "prompt": "see 的過去式／過去分詞是哪一組？",
+        "options": [
+          "saw / seen",
+          "seen / saw",
+          "see / saw"
+        ],
+        "answer": 0,
+        "why": "see–saw–seen。簡單過去用 saw；have/has 後用 seen。",
+        "id": "g5-u03-pre-2"
+      }
+    ],
+    "scene_title": "同一個城市，兩種說法",
+    "scene_intro": "Mia 和 Ben 談到臺南。留意他們是在談「到目前為止的經驗」，還是「哪一次已結束的旅行」。",
+    "scene": [
+      [
+        "Mia",
+        "I have visited Tainan twice."
+      ],
+      [
+        "Ben",
+        "When did you last go?"
+      ],
+      [
+        "Mia",
+        "I went there last year."
+      ]
+    ],
+    "notice": [
+      [
+        "哪一句告訴我們到目前為止的經驗？",
+        "I have visited Tainan twice. 次數累積到現在，沒有指定某個結束的過去時間。"
+      ],
+      [
+        "哪一句把事件放在明確的過去？",
+        "I went there last year. last year 指向已結束的過去年份。"
+      ]
+    ],
+    "rules": [
+      [
+        "01",
+        "已結束的過去，用 simple past",
+        "說明某次事件發生在 yesterday、last year 等已結束的時間，用過去式。時間可以在前後文提供，不一定在同一句。",
+        "I visited Tainan last year."
+      ],
+      [
+        "02",
+        "經驗連到現在，用 present perfect",
+        "have／has + 過去分詞，可以描述到目前為止的經驗。本課不把「沒寫時間」當成唯一判斷方法。",
+        "I have visited Tainan twice."
+      ],
+      [
+        "03",
+        "持續到現在：for 與 since",
+        "for 後接一段時間；since 後接起點。描述住在某處、認識某人等仍持續的狀態，可用現在完成式。",
+        "I have lived here for three years. / I have lived here since 2023."
+      ]
+    ],
+    "vocab": [
+      [
+        "experience",
+        "經驗"
+      ],
+      [
+        "so far",
+        "到目前為止"
+      ],
+      [
+        "still",
+        "仍然"
+      ]
+    ],
+    "contrasts": [
+      [
+        "I visited Tainan last year.",
+        "I have visited Tainan twice.",
+        "第一句定位去年那次旅行；第二句談到目前為止的累積經驗。"
+      ],
+      [
+        "I saw that film yesterday.",
+        "I have seen that film.",
+        "第一句交代昨天的事件；第二句說有看過的經驗，可能正影響現在要選哪部電影。"
+      ],
+      [
+        "I lived there for three years.",
+        "I have lived here for three years.",
+        "第一句是已結束的居住期間；第二句表示現在仍住這裡。兩句都能用 for。"
+      ],
+      [
+        "I have lived here for three years.",
+        "I have lived here since 2023.",
+        "若故事設定在 2026 年、搬入已滿三年，兩句可描述同一狀態。for 後是長度，since 後是起點。"
+      ],
+      [
+        "Yesterday, we went to the park. We saw a bird.",
+        "We have seen that bird before.",
+        "過去式可沿用前一句的時間背景；現在完成式則談截至現在的見過經驗。不是沒有時間字就必須用完成式。"
+      ]
+    ],
+    "mistakes": [
+      [
+        "I have visited Tainan yesterday.",
+        "I visited Tainan yesterday.",
+        "yesterday 是明確結束的過去時間；這裡用簡單過去。"
+      ],
+      [
+        "I have lived here since three years.",
+        "I have lived here for three years.",
+        "three years 是一段時間，所以用 for。起點才用 since。"
+      ]
+    ],
+    "groups": [
+      [
+        "找出時間的意思",
+        [
+          {
+            "prompt": "I went there last year. 指向哪一種時間？",
+            "options": [
+              "明確結束的過去",
+              "從過去持續到現在",
+              "未來計畫"
+            ],
+            "answer": 0,
+            "why": "last year 是已結束的過去年份。",
+            "id": "g5-u03-q-1-1"
+          },
+          {
+            "prompt": "I have visited Tainan twice. 主要說明什麼？",
+            "options": [
+              "明天的行程",
+              "到目前為止的到訪經驗",
+              "精確的到訪日期"
+            ],
+            "answer": 1,
+            "why": "have visited twice 表示到目前為止的累積經驗。",
+            "id": "g5-u03-q-1-2"
+          },
+          {
+            "prompt": "I have lived here for three years. 在本課語境中代表：",
+            "options": [
+              "現在仍住這裡",
+              "已經搬走",
+              "明年才搬來"
+            ],
+            "answer": 0,
+            "why": "現在完成式搭配持續狀態，表示從過去到現在仍成立。",
+            "id": "g5-u03-q-1-3"
+          }
+        ]
+      ],
+      [
+        "依語境選句子",
+        [
+          {
+            "prompt": "你的旅行在昨天結束。哪句合適？",
+            "options": [
+              "I have visited Tainan yesterday.",
+              "I visited Tainan yesterday."
+            ],
+            "answer": 1,
+            "why": "yesterday 是明確結束的過去，所以用 visited。",
+            "id": "g5-u03-q-2-1"
+          },
+          {
+            "prompt": "有人問你到目前為止的人生經驗，不指定哪一次。選出現在完成式的回答。",
+            "options": [
+              "I have visited Tainan twice.",
+              "I visited Tainan last year."
+            ],
+            "answer": 0,
+            "why": "第一句以現在完成式回答累積經驗；第二句提供某次過去旅行。",
+            "id": "g5-u03-q-2-2"
+          },
+          {
+            "prompt": "故事設定為 2026 年：你在 2023 年搬來，現在仍住這裡。哪句適合？",
+            "options": [
+              "I have lived here since 2023.",
+              "I have lived here since three years."
+            ],
+            "answer": 0,
+            "why": "2023 是時間起點，搭配 since；three years 是期間，搭配 for。",
+            "id": "g5-u03-q-2-3"
+          }
+        ]
+      ],
+      [
+        "完成句子",
+        [
+          {
+            "prompt": "I saw Mia ___. 請選一個明確結束的過去時間。",
+            "options": [
+              "yesterday",
+              "so far",
+              "since 2022"
+            ],
+            "answer": 0,
+            "why": "yesterday 把 saw 定位在昨天的事件。",
+            "id": "g5-u03-q-3-1"
+          },
+          {
+            "prompt": "We have lived here ___ five years.",
+            "options": [
+              "since",
+              "for",
+              "at"
+            ],
+            "answer": 1,
+            "why": "five years 是期間，所以用 for。",
+            "id": "g5-u03-q-3-2"
+          },
+          {
+            "prompt": "She has known Ben ___ 2021.",
+            "options": [
+              "for",
+              "in",
+              "since"
+            ],
+            "answer": 2,
+            "why": "2021 是起點，所以用 since。",
+            "id": "g5-u03-q-3-3"
+          }
+        ]
+      ]
+    ],
+    "open": [
+      {
+        "prompt": "修正這句：I have seen that film yesterday.",
+        "sample": "I saw that film yesterday.",
+        "why": "保留 yesterday 的意思，將 have seen 改為 saw。",
+        "id": "g5-u03-open-1"
+      },
+      {
+        "prompt": "你在 2022 年認識 Mia，到現在仍是朋友。用 since 寫一句。",
+        "sample": "I have known Mia since 2022.",
+        "why": "known 是 know 的過去分詞；since 後放起點 2022。",
+        "id": "g5-u03-open-2"
+      },
+      {
+        "prompt": "寫兩句：一句談到過臺南的經驗，一句說某次旅行的時間。可用虛構資料。",
+        "sample": "I have visited Tainan twice. I went there last year.",
+        "why": "第一句用完成式呈現經驗，第二句用過去式交代特定旅行。其他合宜動詞與時間也可。",
+        "id": "g5-u03-open-3"
+      }
+    ],
+    "write": {
+      "title": "寫一份人物經歷小檔案",
+      "prompt": "用 6–8 句介紹真實或虛構人物。說一項到目前為止的經驗、一個有時間背景的過去事件，以及一個持續到現在的狀態。不要為了湊時態，讓人物經歷互相矛盾。",
+      "frames": [
+        "I have ____. / She has ____. / He has ____.",
+        "Last year, I / she / he ____.",
+        "I have lived here for ____. / She has lived here since ____."
+      ],
+      "sample": "Mia lives in Taipei. She has lived there since 2022. She likes reading. She has visited Tainan twice. She went there last year. She saw an old temple on that trip.",
+      "checklist": [
+        "我把特定過去事件的時間交代清楚。",
+        "我的完成式有現在的連結。",
+        "for 後是期間，since 後是起點。",
+        "我檢查 have／has 和過去分詞。"
+      ],
+      "rubric": "評量時間意思是否一致、形式是否合宜、讀者是否能理解經歷。不是看到 yesterday 才能用過去式，也不是沒有時間字就必須用完成式。"
+    },
+    "exit": [
+      {
+        "prompt": "We ___ a game last night.",
+        "options": [
+          "have played",
+          "played",
+          "has played"
+        ],
+        "answer": 1,
+        "why": "last night 是已結束的過去，用 played。",
+        "id": "g5-u03-exit-1"
+      },
+      {
+        "prompt": "我仍住在這裡。I have lived here ___ 2020.",
+        "options": [
+          "for",
+          "since",
+          "on"
+        ],
+        "answer": 1,
+        "why": "2020 是起點，使用 since。",
+        "id": "g5-u03-exit-2"
+      },
+      {
+        "prompt": "哪句明確表示認識的狀態持續到現在？",
+        "options": [
+          "I met Ben in 2020.",
+          "I have known Ben since 2020.",
+          "I will meet Ben tomorrow."
+        ],
+        "answer": 1,
+        "why": "have known ... since 表示認識的狀態從 2020 延續到現在。",
+        "id": "g5-u03-exit-3"
+      }
+    ],
+    "adult": "先請學生畫出事件與現在的關係，再選形式。不要只教關鍵字配對；for 也能出現在已結束的過去。英文變體與談話語境可能讓其他形式合理，所以本課只在清楚限定的語境判定答案。過去完成式、完成進行式不列本課必修。",
+    "next_note": "完整課程的下一步是 G5-U04：用被動語態描述流程。本次先開放三個示範單元。",
+    "usage_groups": [
+      {
+        "id": "simple-past",
+        "title": "簡單過去式：把事件放在已結束的過去",
+        "form": "主詞 + 過去式；時間可在句中或上下文中",
+        "note": "以下五種生活情境都把事件放在已結束的過去。不能只因某句沒有時間字，就改用現在完成式。",
+        "cases": [
+          {
+            "context": "說昨天做了什麼",
+            "use": "回想昨天完成的活動。",
+            "example": "I visited the library yesterday.",
+            "translation": "我昨天去了圖書館。",
+            "focus": "visited"
+          },
+          {
+            "context": "分享某次旅行",
+            "use": "談去年那一次旅行，而不是一生到訪的次數。",
+            "example": "We went to Tainan last year.",
+            "translation": "我們去年去了臺南。",
+            "focus": "went"
+          },
+          {
+            "context": "記錄完成的作品",
+            "use": "你在上星期五完成了海報。",
+            "example": "She finished the poster last Friday.",
+            "translation": "她上星期五完成了海報。",
+            "focus": "finished"
+          },
+          {
+            "context": "介紹以前的生活",
+            "use": "說自己以前住在高雄的情況；那段生活已結束。",
+            "example": "I lived in Kaohsiung when I was six.",
+            "translation": "我六歲時住在高雄。",
+            "focus": "lived"
+          },
+          {
+            "context": "延續已建立的時間背景",
+            "use": "前一句已說「昨天我們去公園」，後一句不用每次重複 yesterday。",
+            "example": "We saw a small bird there.",
+            "translation": "我們在那裡看到一隻小鳥。",
+            "focus": "saw"
+          }
+        ]
+      },
+      {
+        "id": "present-perfect",
+        "title": "現在完成式：把過去連到現在",
+        "form": "主詞 + have / has + 過去分詞",
+        "note": "先找現在的連結：到目前為止的經驗、累積次數、眼前結果，或仍然持續的狀態。下面五種情境不代表五種不同時態。",
+        "cases": [
+          {
+            "context": "分享人生經驗",
+            "use": "告訴朋友自己到過臺南，不指定某一次的日期。",
+            "example": "I have visited Tainan.",
+            "translation": "我去過臺南。",
+            "focus": "have visited"
+          },
+          {
+            "context": "談到目前為止的次數",
+            "use": "這是你至今讀這本書的累積次數。",
+            "example": "I have read this book three times.",
+            "translation": "這本書我已經讀過三次。",
+            "focus": "have read"
+          },
+          {
+            "context": "交代現在可見的成果",
+            "use": "海報剛完成，現在可以拿去展示。",
+            "example": "She has finished the poster.",
+            "translation": "她已經完成海報了。",
+            "focus": "has finished"
+          },
+          {
+            "context": "說明影響現在的事件",
+            "use": "鑰匙不見了，現在仍找不到，因此進不了門。",
+            "example": "I have lost my key.",
+            "translation": "我的鑰匙不見了。",
+            "focus": "have lost"
+          },
+          {
+            "context": "描述仍持續的狀態",
+            "use": "你從以前住到現在，而且仍住這裡。",
+            "example": "I have lived here for three years.",
+            "translation": "我住在這裡已經三年了。",
+            "focus": "have lived"
+          }
+        ]
+      },
+      {
+        "id": "for",
+        "title": "for：說一段時間有多長",
+        "form": "持續到現在的狀態：have / has + 過去分詞 + for + 期間",
+        "note": "for 後面放期間，例如 three years、two weeks。for 也能搭配過去式；這一組先練習仍持續到現在的狀態。",
+        "cases": [
+          {
+            "context": "居住時間",
+            "use": "你搬來三年了，現在仍住在這裡。",
+            "example": "I have lived here for three years.",
+            "translation": "我住在這裡已經三年了。",
+            "focus": "for three years"
+          },
+          {
+            "context": "認識朋友多久",
+            "use": "你認識 Ben 兩年了，現在仍然認識他。",
+            "example": "I have known Ben for two years.",
+            "translation": "我認識 Ben 已經兩年了。",
+            "focus": "for two years"
+          },
+          {
+            "context": "擁有物品多久",
+            "use": "這台腳踏車買了六個月，現在仍是你的。",
+            "example": "I have had this bike for six months.",
+            "translation": "我擁有這台腳踏車已經六個月了。",
+            "focus": "for six months"
+          },
+          {
+            "context": "參加社團多久",
+            "use": "她兩年前加入社團，現在仍是成員。",
+            "example": "She has been in the club for two years.",
+            "translation": "她加入這個社團已經兩年了。",
+            "focus": "for two years"
+          },
+          {
+            "context": "在同一班多久",
+            "use": "這幾位學生一年前開始同班，現在仍同班。",
+            "example": "They have been in the same class for a year.",
+            "translation": "他們同班已經一年了。",
+            "focus": "for a year"
+          }
+        ]
+      },
+      {
+        "id": "since",
+        "title": "since：說從哪個起點開始",
+        "form": "持續到現在的狀態：have / has + 過去分詞 + since + 起點",
+        "note": "since 後面放起點，例如 2022、January、Monday。這組先用年份、月份與日子，不另外要求 since 子句。",
+        "cases": [
+          {
+            "context": "從哪年開始居住",
+            "use": "你在 2022 年搬來，現在仍住這裡。",
+            "example": "I have lived here since 2022.",
+            "translation": "我從 2022 年起就住在這裡。",
+            "focus": "since 2022"
+          },
+          {
+            "context": "從哪月開始認識",
+            "use": "今年一月認識 Ben，現在已過一月，你們仍保持聯繫。",
+            "example": "I have known Ben since January.",
+            "translation": "我從一月起就認識 Ben。",
+            "focus": "since January"
+          },
+          {
+            "context": "從哪天開始擁有物品",
+            "use": "這台腳踏車是星期一拿到的，今天已過星期一。",
+            "example": "I have had this bike since Monday.",
+            "translation": "我從星期一起就擁有這台腳踏車。",
+            "focus": "since Monday"
+          },
+          {
+            "context": "從哪年開始參加社團",
+            "use": "她在 2023 年加入，現在仍是社團成員。",
+            "example": "She has been in the club since 2023.",
+            "translation": "她從 2023 年起就在這個社團。",
+            "focus": "since 2023"
+          },
+          {
+            "context": "從哪月開始同班",
+            "use": "故事發生在十二月：他們九月開始同班，到現在都沒換班。",
+            "example": "They have been in the same class since September.",
+            "translation": "他們從九月起就一直同班。",
+            "focus": "since September"
+          }
+        ]
+      }
+    ],
+    "usage_intro": "每一組有五種使用情境與五個例句。先看什麼時候會說這句話，再讀例句與中文意思，留意標出的文法形式。可以分次閱讀，不必一次背完。",
+    "content_version": "0.2"
+  }
+]
