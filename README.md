@@ -2,6 +2,10 @@
 
 三個可實際試用的示範單元，採原生 HTML、CSS、JavaScript，適合 GitHub Pages。沒有第三方前端套件、資料庫、遠端字型或執行期 API。
 
+**正式網站：[Grammar Journey](https://smilejos.github.io/MyGrammar/)**
+
+已於 2026-09-16 發布。推送到 `main` 後，GitHub Actions 會自動檢查、建置並更新網站。
+
 ## 已完成範圍
 
 - G1-U06：am / is / are 介紹自己。

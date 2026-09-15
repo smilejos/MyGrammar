@@ -21,7 +21,7 @@
 
 ## 尚未完成或受限的驗證
 
-- 未發布到 GitHub Pages：已提供官方流程架構的 workflow，尚無指定 repository、真實部署 URL 與遠端執行結果。
+- 原示範階段未發布到 GitHub Pages；此項已於 2026-09-16 完成，詳見下方正式發布紀錄。
 - file:// 的瀏覽器實測被內建瀏覽器 URL 安全政策阻擋，沒有以其他方式繞過。原始碼採相對連結，沒有 fetch/module 依賴；本機 HTTP 已實測，但不把 file 模式標成已驗證。
 - 列印入口已觸發，但內建瀏覽器未顯示可檢查的系統列印對話框；嘗試讀取 Codex 原生介面受工具限制。因此目前完成列印 CSS、學習單畫面與學生／答案分離檢查，未聲稱已實際核對 A4/Letter 的全部分頁或紙本輸出。
 - 未完成正式的全站 WCAG 稽核、螢幕閱讀器及 200% 文字縮放測試。
@@ -34,3 +34,15 @@
 - 補充內容全數寫入靜態 HTML，附分組錨點，可不依賴 JavaScript 閱讀。
 - `python3 scripts/build.py` 與 `python3 tests/validate.py` 通過；驗證每組至少五個不同情境／例句、目標形式存在、實際輸出數量與錨點，以及原有題目與學生／答案分離。
 - 本次為內容與共用版型擴充，未重新進行瀏覽器互動或列印分頁的視覺測試；上方瀏覽器結果為 v0.1 紀錄。
+
+## 2026-09-16 正式發布
+
+- 公開儲存庫：https://github.com/smilejos/MyGrammar
+- 正式網站：https://smilejos.github.io/MyGrammar/
+- GitHub Pages 使用 GitHub Actions 發布，預設網址強制 HTTPS。
+- 首次發布執行：https://github.com/smilejos/MyGrammar/actions/runs/34997088699
+- 教材提交：`6a610adb31d020103b09149365f44b1c3e242e6a`，建置、課程檢查、語法檢查與部署步驟全部成功。
+- 22 個正式 HTML／資源回應 HTTP 200，內容逐一與本機建置輸出比對完全一致（18 個內容頁、4 個共用資源；不含直接讀取 404.html）。
+- 保留示範教材定位及 noindex 設定；未改成完整六年教材或宣稱已完成教師審閱。
+- 本機已連接 origin/main；原始本機提交保留於 local-demo-before-publish 分支。
+- 本紀錄更新只涉及文件，不變更已驗證的網站輸出。
