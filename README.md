@@ -1,77 +1,52 @@
 # Grammar Journey — 英文文法學習室
 
-三個可實際試用的示範單元，採原生 HTML、CSS、JavaScript，適合 GitHub Pages。沒有第三方前端套件、資料庫、遠端字型或執行期 API。
+[正式網站](https://smilejos.github.io/MyGrammar/) · [G1–G3 課程編排文件](dist/curriculum/grade-1-3.md)
 
-**正式網站：[Grammar Journey](https://smilejos.github.io/MyGrammar/)**
+Grade 1–3 各 12 個完整單元，分為兩個 Term，另保留 G5-U03 示範。以原生 HTML、CSS、JavaScript 製作，由 GitHub Pages 提供服務，無第三方前端套件、資料庫或執行期 API。
 
-已於 2026-09-16 發布。推送到 `main` 後，GitHub Actions 會自動檢查、建置並更新網站。
+## 已完成內容
 
-## 已完成範圍
+| 年級 | 編排方向 | 單元 | 情境例句 |
+|---|---|---:|---:|
+| G1 | 詞性、主詞述語、be、描述與四種句型 | 12 | 162 |
+| G2 | 複數、受格、現在式、過去式、未來與片語 | 12 | 138 |
+| G3 | 所有格、進行式、副詞、比較、連接與提問 | 12 | 164 |
+| G5 | 完成式／過去式示範 | 1 | 20 |
 
-- G1-U06：am / is / are 介紹自己。
-- G3-U09：比較級，用重量與價格說明選擇。
-- G5-U03：現在完成式與簡單過去式，含 for / since。
-- 每課兩題暖身、依文法形式分組的情境例句、五組差異對照、九道單選＋三道開放核心練習、寫作任務、三題課末檢核。
-- 三份學生學習單、三份獨立答案頁、年級方向與使用指南。
-- 所有答案與教材都在 HTML 裡；JavaScript 僅提供選擇題檢查、重設與頁內導覽提示。
+- G1–G3 共 36 課、464 組情境例句；每個用法分組至少五個不同情境、英文例句、中文與目標形式標示。
+- 每課：兩題先備暖身、九題核心選擇、三題改寫／開放題、寫作任務、三題課末檢核、五組差異對照與常見錯誤。
+- 六次學期複習各六題，附來源課程連結與整合作品檢核。G1–G3 共 540 道選擇題呈現（含暖身回取與學期複習，不是 540 道不重複題目）。
+- 37 份學生學習單與 37 份獨立答案頁；全站共 127 頁 HTML。
+- 依年級、Term、Unit 顯示順序，單元提供先備連結、上一課／下一課與學期複習入口。
+- G4/G6 尚為方向規劃，G5 只完成示範；未宣稱六年 72 課皆已完成。
 
-其他年級與單元只呈現規劃方向，不代表完整 72 課已完成。示範教材為自主編排、待教師審閱；G1 的 be verbs 為補充設計，G3–G6 為延伸設計，非康橋或 MyGrammar 官方課綱。
+G1/G2 參考使用者提供的目錄主題重新編排，網站編號不等同原書。G3–G6 為自主延伸設計，非康橋或 MyGrammar 官方課綱。教材仍待教師審閱；自動檢查不能取代教學判斷。
 
-## 例句與用法標準（v0.2）
+## 本機預覽與修改
 
-每個文法形式至少五個不同例句與五種使用情境；每組包含情境、何時使用、英文例句、中文意思與目標形式標示。這裡的「五種用法」是五種情境應用，不將同一規則硬拆成五種文法意義。
-
-- G1：am、is、are，各五組，共 15 組。
-- G3：-er、more、good → better，各五組，共 15 組。
-- G5：簡單過去、現在完成、for、since，各五組，共 20 組。
-- 每課另附五組對照，說明形式、語意與上下文的差異。
-- 編輯來源為 `content/units.json` 的 `usage_groups`；不要把只換人名的句子當作不同情境。
-- 學生學習單仍只含作答所需資訊，完整情境例句收在教學頁，可用瀏覽器列印該頁。
-
-## 在本機查看
-
-直接開啟 `dist/index.html` 即可。也可以在專案目錄執行：
-
-```sh
-python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
-```
-
-然後開啟 `http://127.0.0.1:4173/`。
-
-## 修改內容與重建
-
-`content/units.json` 是教材單一來源；`scripts/build.py` 是共用頁面模板；`assets/` 保存樣式與選擇題互動。請勿只改 `dist/` 裡的教材，重建會覆蓋已生成頁面。
+教材的單一來源是 `content/units.json`；年級／學期順序、複習題與整合作品是 `content/curriculum.json`。`scripts/build.py` 共用模板產生網站與 Markdown 課程編排，`assets/` 保存樣式與互動。不要只修改 `dist/`，重建會覆蓋生成檔。
 
 ```sh
 python3 scripts/build.py
 python3 tests/validate.py
 node --check assets/app.js
+python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
 ```
 
-需要 Python 3.10 或以上執行建置與檢查；瀏覽網站不需要 Python。Node 只用於語法檢查，不是建置或瀏覽必需條件。
+開啟 `http://127.0.0.1:4173/`；也可直接開啟 `dist/index.html` 離線閱讀。建置／檢查使用 Python 3.10+ 標準函式庫，Node 僅作 JavaScript 語法檢查。
 
-## 發布到 GitHub Pages
+每次修改課末檢核或寫作任務時，也應更新 `curriculum.json` 中對應的學期複習副本與作品；新增先備必須指向已完成且較早的課程。維持已發布的單元 slug，避免舊連結失效。
 
-儲存庫：[smilejos/MyGrammar](https://github.com/smilejos/MyGrammar)。已附 `.github/workflows/pages.yml`，GitHub Pages 發布來源設定為 GitHub Actions。正式網址與目前發布結果可從儲存庫的 Pages 設定或 Actions 執行結果查看。
+## GitHub Pages
 
-1. 將專案放入選定的 GitHub repository，預設分支使用 `main`；若不同，修改 workflow 分支名稱。
-2. 在 repository 的 **Settings → Pages → Build and deployment → Source** 選擇 **GitHub Actions**。
-3. 推送到 `main` 或手動執行 workflow，完成後使用部署結果所顯示的 Pages 網址。
+[儲存庫](https://github.com/smilejos/MyGrammar) 已啟用 GitHub Actions 發布。推送 `main` 後，`.github/workflows/pages.yml` 會建置、驗證連結與資料、檢查 JS，再發布 `dist/`。相對網址支援 `/MyGrammar/` 子路徑。
 
-流程會先建置與檢查，再只發布 `dist/`，不會把內容編輯檔與開發用資料一起作為網站根目錄。相對連結支援 repository 子路徑。沒有假造帳號、網址或已完成部署的狀態。
+目前保留 `noindex,follow`，供教材評閱，不產生正式 canonical/sitemap。未來完成內容審閱並決定開放搜尋後再處理；列印副本與答案可繼續 noindex。
 
-此示範版所有頁面暫設 `noindex,follow`，方便評估，尚未產生正式 canonical/sitemap。若要讓正式教材被搜尋到，請在確定正式網址且完成教材審閱後，調整 `scripts/build.py` 的 robots 設定，另生成主頁與課文的 canonical/sitemap，學生列印副本與答案頁仍可保留 noindex。
+## 學習方式與限制
 
-Workflow 的部署步驟參考 [GitHub 官方 static Pages workflow](https://github.com/actions/starter-workflows/blob/main/pages/static.yml)（2026-09-15 查閱）。發布流程會檢查課程資料、連結與 JavaScript，僅將 `dist/` 上傳為網站。
+選擇題可檢查答對、答錯、未答與原因，也可重設。所有教材、答案和連結在 HTML 中；JavaScript 關閉時仍可閱讀及展開答案。改寫與寫作依判準自評，沒有字串比對或 AI 自動批改。
 
-## 使用方式
+作答與勾選不持久儲存，沒有登入、追蹤分析或資料上傳。學生可在紙上作答，學習單不含答案。教學頁與學期複習頁列印時會展開解析；需要無答案版本時請選單元的「列印學習單」。
 
-選擇題「檢查答案」會標示未答、答對或需要再想一想，並解釋原因。答案可直接展開，這是學習材料，不是保密考試。改寫與寫作以判準自評，不使用字串比對或 AI 假裝批改。
-
-作答與勾選不持久保存。學生可在紙上寫作；列印學習單不含答案，答案另頁。沒有登入、跨裝置進度或作答資料上傳。
-
-## 驗證與限制
-
-靜態檢查涵蓋全部 19 頁的連結／錨點、題目數量與答案範圍、學生／答案分離。瀏覽器檢查記錄見 `QA.md`。
-
-自動與瀏覽器檢查不能取代英文教師的內容審閱。這是可操作的教材示範版，尚未聲稱全面符合 WCAG 或通過正式教學成效驗證。
+驗證記錄見 [QA.md](QA.md)。完整課程數量、先備順序、固定網址、情境數量、答案範圍、全部頁面／錨點與學習單答案分離都會自動檢查。

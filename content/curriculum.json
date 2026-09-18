@@ -1,0 +1,637 @@
+[
+  {
+    "grade": 1,
+    "status": "complete",
+    "terms": [
+      {
+        "term": 1,
+        "title": "認識詞語與基本句",
+        "units": [
+          "g1-u01",
+          "g1-u02",
+          "g1-u03",
+          "g1-u04",
+          "g1-u05",
+          "g1-u06"
+        ],
+        "review": [
+          {
+            "prompt": "哪一組只有名詞？",
+            "options": [
+              "dog, park",
+              "run, jump",
+              "red, big"
+            ],
+            "answer": 0,
+            "why": "dog 是動物，park 是地方。",
+            "id": "g1-t1-review-1",
+            "source": "g1-u01"
+          },
+          {
+            "prompt": "一顆蘋果變成兩顆，選正確詞組。",
+            "options": [
+              "two apple",
+              "an apples",
+              "two apples"
+            ],
+            "answer": 2,
+            "why": "數量改成二，要用 apples。",
+            "id": "g1-t1-review-2",
+            "source": "g1-u01"
+          },
+          {
+            "prompt": "The ball is red. ___ is big.",
+            "options": [
+              "It",
+              "They",
+              "We"
+            ],
+            "answer": 0,
+            "why": "it 指前句的單數物品 ball。",
+            "id": "g1-t1-review-3",
+            "source": "g1-u03"
+          },
+          {
+            "prompt": "哪句需要修改？",
+            "options": [
+              "I like apples.",
+              "Help me, please.",
+              "Me like apples."
+            ],
+            "answer": 2,
+            "why": "此處主詞應為 I。",
+            "id": "g1-t1-review-4",
+            "source": "g1-u03"
+          },
+          {
+            "prompt": "She ___ my friend.",
+            "options": [
+              "am",
+              "is",
+              "are"
+            ],
+            "answer": 1,
+            "why": "she 搭配 is。",
+            "id": "g1-t1-review-5",
+            "source": "g1-u06"
+          },
+          {
+            "prompt": "哪一句需要修改？",
+            "options": [
+              "I am happy.",
+              "You are kind.",
+              "They is friends."
+            ],
+            "answer": 2,
+            "why": "They is friends. 應改為 They are friends.",
+            "id": "g1-t1-review-6",
+            "source": "g1-u06"
+          }
+        ],
+        "project": {
+          "title": "一張「認識我」小卡",
+          "prompt": "向新朋友介紹自己。用 2–3 句說名字、感受，再介紹一位朋友。可以寫虛構人物，也可以先說給成人聽。",
+          "frames": [
+            "I am ____.",
+            "I am ____.",
+            "He / She is ____."
+          ],
+          "sample": "I am Mia. I am happy. She is my friend.",
+          "checklist": [
+            "我有用 I am 介紹自己。",
+            "我有依主詞選 am、is 或 are。",
+            "每句開頭大寫，結尾有句號。"
+          ],
+          "rubric": "能看懂你在介紹誰，並在每個需要 be 的句子中使用適當形式，就達成本課目標。拼字可請成人協助。"
+        }
+      },
+      {
+        "term": 2,
+        "title": "描述、提問與禮貌表達",
+        "units": [
+          "g1-u07",
+          "g1-u08",
+          "g1-u09",
+          "g1-u10",
+          "g1-u11",
+          "g1-u12"
+        ],
+        "review": [
+          {
+            "prompt": "哪句不需要額外加 be？",
+            "options": [
+              "I draw pictures.",
+              "I happy.",
+              "She a student."
+            ],
+            "answer": 0,
+            "why": "draw 已是動詞，不在它前面加 am。",
+            "id": "g1-t2-review-1",
+            "source": "g1-u07"
+          },
+          {
+            "prompt": "把 We / are / friends 組成句子。",
+            "options": [
+              "Are we friends.",
+              "Friends we are.",
+              "We are friends."
+            ],
+            "answer": 2,
+            "why": "本題要組成敘述句，主詞在前。",
+            "id": "g1-t2-review-2",
+            "source": "g1-u07"
+          },
+          {
+            "prompt": "一顆蛋，選哪個詞組？",
+            "options": [
+              "an egg",
+              "a egg",
+              "an eggs"
+            ],
+            "answer": 0,
+            "why": "egg 以母音音素開頭。",
+            "id": "g1-t2-review-3",
+            "source": "g1-u09"
+          },
+          {
+            "prompt": "選 a 或 an，主要看什麼？",
+            "options": [
+              "字有幾個字母",
+              "物品的顏色",
+              "緊接的發音"
+            ],
+            "answer": 2,
+            "why": "看發音而不是只看字母。",
+            "id": "g1-t2-review-4",
+            "source": "g1-u09"
+          },
+          {
+            "prompt": "哪句標點最符合強烈感嘆？",
+            "options": [
+              "What a lovely day!",
+              "What a lovely day?",
+              "What a lovely day,"
+            ],
+            "answer": 0,
+            "why": "本課感嘆句以驚嘆號結束。",
+            "id": "g1-t2-review-5",
+            "source": "g1-u12"
+          },
+          {
+            "prompt": "辨認句型：Is it a big dog?",
+            "options": [
+              "祈使句",
+              "直述句",
+              "疑問句"
+            ],
+            "answer": 2,
+            "why": "它在提問，以問號結束。",
+            "id": "g1-t2-review-6",
+            "source": "g1-u12"
+          }
+        ],
+        "project": {
+          "title": "班級小海報",
+          "prompt": "寫 2 句禮貌提醒與 1 句感嘆，複習句首和句尾標點。",
+          "frames": [
+            "Please ____.",
+            "Do not ____.",
+            "What a / an ____ ____!"
+          ],
+          "sample": "Please read the story. Do not run here. What a lovely classroom!",
+          "checklist": [
+            "讀者能理解我想表達的人、事物或時間。",
+            "祈使句用原形；What a/an 感嘆句詞序正確。",
+            "我的句首、專有名詞和 I 使用大寫。",
+            "我檢查句尾標點，並讀出句子確認意思。"
+          ],
+          "rubric": "先檢查意思是否符合任務，再看目標形式。內容可不同於示例；拼字可查字典。G1 可先口述由成人記錄，G2/G3 逐步自行書寫。"
+        }
+      }
+    ]
+  },
+  {
+    "grade": 2,
+    "status": "complete",
+    "terms": [
+      {
+        "term": 1,
+        "title": "名詞系統與日常習慣",
+        "units": [
+          "g2-u01",
+          "g2-u02",
+          "g2-u03",
+          "g2-u04",
+          "g2-u05",
+          "g2-u06"
+        ],
+        "review": [
+          {
+            "prompt": "My older sister cooks rice. sister 屬於哪一部分？",
+            "options": [
+              "主詞",
+              "述語",
+              "句尾標點"
+            ],
+            "answer": 0,
+            "why": "My older sister 是完整主詞。",
+            "id": "g2-t1-review-1",
+            "source": "g2-u01"
+          },
+          {
+            "prompt": "哪個片段缺少動詞？",
+            "options": [
+              "The bag is blue.",
+              "Is the bag blue?",
+              "The blue bag"
+            ],
+            "answer": 2,
+            "why": "The blue bag 只有名詞詞組。",
+            "id": "g2-t1-review-2",
+            "source": "g2-u01"
+          },
+          {
+            "prompt": "哪個需要修改？",
+            "options": [
+              "three childrens",
+              "three children",
+              "one child"
+            ],
+            "answer": 0,
+            "why": "children 已是複數，不再加 s。",
+            "id": "g2-t1-review-3",
+            "source": "g2-u03"
+          },
+          {
+            "prompt": "man 的複數是？",
+            "options": [
+              "mans",
+              "manes",
+              "men"
+            ],
+            "answer": 2,
+            "why": "man 變 men。",
+            "id": "g2-t1-review-4",
+            "source": "g2-u03"
+          },
+          {
+            "prompt": "He ___ TV after dinner.",
+            "options": [
+              "watches",
+              "watch",
+              "watchs"
+            ],
+            "answer": 0,
+            "why": "watch 加 es。",
+            "id": "g2-t1-review-5",
+            "source": "g2-u06"
+          },
+          {
+            "prompt": "My friends ___ books every day.",
+            "options": [
+              "reads",
+              "reading",
+              "read"
+            ],
+            "answer": 2,
+            "why": "friends 為複數，read 用原形。",
+            "id": "g2-t1-review-6",
+            "source": "g2-u06"
+          }
+        ],
+        "project": {
+          "title": "我和朋友的日常",
+          "prompt": "用 4 句介紹自己和一位朋友的習慣。至少兩句使用第三人稱單數動詞。",
+          "frames": [
+            "I ____ every day.",
+            "My friend ____.",
+            "He / She ____."
+          ],
+          "sample": "I walk to school. Mia walks to school too. She reads after school. I play soccer on Sundays.",
+          "checklist": [
+            "讀者能理解我想表達的人、事物或時間。",
+            "he/she/單數名詞的現在式動詞形式正確。",
+            "我的句首、專有名詞和 I 使用大寫。",
+            "我檢查句尾標點，並讀出句子確認意思。"
+          ],
+          "rubric": "先檢查意思是否符合任務，再看目標形式。內容可不同於示例；拼字可查字典。G1 可先口述由成人記錄，G2/G3 逐步自行書寫。"
+        }
+      },
+      {
+        "term": 2,
+        "title": "問句、過去、未來與句子擴充",
+        "units": [
+          "g2-u07",
+          "g2-u08",
+          "g2-u09",
+          "g2-u10",
+          "g2-u11",
+          "g2-u12"
+        ],
+        "review": [
+          {
+            "prompt": "回答 Do they play here?，他們不在這裡玩。",
+            "options": [
+              "No, they don't.",
+              "No, they doesn't.",
+              "No, they aren't."
+            ],
+            "answer": 0,
+            "why": "do 問句簡答用 don't。",
+            "id": "g2-t2-review-1",
+            "source": "g2-u07"
+          },
+          {
+            "prompt": "修正 Does she likes apples?",
+            "options": [
+              "Do she likes apples?",
+              "Does she liking apples?",
+              "Does she like apples?"
+            ],
+            "answer": 2,
+            "why": "does 後用原形 like。",
+            "id": "g2-t2-review-2",
+            "source": "g2-u07"
+          },
+          {
+            "prompt": "I 和 she 搭配 played 時，詞尾是否不同？",
+            "options": [
+              "都用 played",
+              "she 用 playeds",
+              "I 用 plays"
+            ],
+            "answer": 0,
+            "why": "過去式不隨這兩個主詞改變。",
+            "id": "g2-t2-review-3",
+            "source": "g2-u09"
+          },
+          {
+            "prompt": "哪個需要修改？",
+            "options": [
+              "We studied yesterday.",
+              "We played yesterday.",
+              "We studyed yesterday."
+            ],
+            "answer": 2,
+            "why": "studyed 應為 studied。",
+            "id": "g2-t2-review-4",
+            "source": "g2-u09"
+          },
+          {
+            "prompt": "哪個只有片語，不是完整敘述句？",
+            "options": [
+              "In my room",
+              "I read in my room.",
+              "My room is small."
+            ],
+            "answer": 0,
+            "why": "In my room 只有位置資訊。",
+            "id": "g2-t2-review-5",
+            "source": "g2-u12"
+          },
+          {
+            "prompt": "I read with Mia. with Mia 添加什麼資訊？",
+            "options": [
+              "動詞的過去形式",
+              "物品顏色",
+              "同伴"
+            ],
+            "answer": 2,
+            "why": "with Mia 說明和誰一起。",
+            "id": "g2-t2-review-6",
+            "source": "g2-u12"
+          }
+        ],
+        "project": {
+          "title": "我的時間小書",
+          "prompt": "寫 4–5 句，把平常、一次過去事件和一項未來計畫放在同一份小日記。每段交代清楚時間。",
+          "frames": [
+            "Every day, I ____.",
+            "Yesterday, I ____.",
+            "Tomorrow, I will ____."
+          ],
+          "sample": "Every day, I read in my room. I read at seven. Yesterday, I read with Mia. We enjoyed the story. Tomorrow, I will visit the library.",
+          "checklist": [
+            "讀者能理解我想表達的人、事物或時間。",
+            "時間片語與現在、過去、未來形式一致。",
+            "我的句首、專有名詞和 I 使用大寫。",
+            "我檢查句尾標點，並讀出句子確認意思。"
+          ],
+          "rubric": "先檢查意思是否符合任務，再看目標形式。內容可不同於示例；拼字可查字典。G1 可先口述由成人記錄，G2/G3 逐步自行書寫。"
+        }
+      }
+    ]
+  },
+  {
+    "grade": 3,
+    "status": "complete",
+    "terms": [
+      {
+        "term": 1,
+        "title": "所有關係與進行中的活動",
+        "units": [
+          "g3-u01",
+          "g3-u02",
+          "g3-u03",
+          "g3-u04",
+          "g3-u05",
+          "g3-u06"
+        ],
+        "review": [
+          {
+            "prompt": "哪個需要修改？",
+            "options": [
+              "There are two chair.",
+              "There are two chairs.",
+              "There is a chair."
+            ],
+            "answer": 0,
+            "why": "two 後要用 chairs。",
+            "id": "g3-t1-review-1",
+            "source": "g3-u01"
+          },
+          {
+            "prompt": "book, read, blue 分別可作？",
+            "options": [
+              "動詞、形容詞、名詞",
+              "形容詞、名詞、動詞",
+              "名詞、動詞、形容詞"
+            ],
+            "answer": 2,
+            "why": "先辨認詞的功能，再放入句型。",
+            "id": "g3-t1-review-2",
+            "source": "g3-u01"
+          },
+          {
+            "prompt": "哪個需要修改？",
+            "options": [
+              "This is mine bag.",
+              "This is my bag.",
+              "This bag is mine."
+            ],
+            "answer": 0,
+            "why": "mine 不能直接修飾 bag。",
+            "id": "g3-t1-review-3",
+            "source": "g3-u03"
+          },
+          {
+            "prompt": "我們的物品用所有代名詞可以是？",
+            "options": [
+              "our",
+              "us",
+              "ours"
+            ],
+            "answer": 2,
+            "why": "ours 可單獨使用。",
+            "id": "g3-t1-review-4",
+            "source": "g3-u03"
+          },
+          {
+            "prompt": "修正 They was cooking.",
+            "options": [
+              "They were cooking.",
+              "They did cooking.",
+              "They are cooked."
+            ],
+            "answer": 0,
+            "why": "複數 they 的過去進行用 were。",
+            "id": "g3-t1-review-5",
+            "source": "g3-u06"
+          },
+          {
+            "prompt": "哪句描寫過去某刻正在進行？",
+            "options": [
+              "We run every day.",
+              "We will run tomorrow.",
+              "We were running at seven yesterday."
+            ],
+            "answer": 2,
+            "why": "were running 配合過去時刻。",
+            "id": "g3-t1-review-6",
+            "source": "g3-u06"
+          }
+        ],
+        "project": {
+          "title": "昨天六點的定格畫面",
+          "prompt": "用 4–5 句描述昨天六點不同人物正在做什麼，至少有一句否定。",
+          "frames": [
+            "At six yesterday, I was ____.",
+            "____ was / were ____."
+          ],
+          "sample": "At six yesterday, I was reading. Mom was cooking. Dad was drawing. My friends were playing outside. I was not watching TV.",
+          "checklist": [
+            "讀者能理解我想表達的人、事物或時間。",
+            "過去進行式使用 was/were，並交代過去時刻。",
+            "我的句首、專有名詞和 I 使用大寫。",
+            "我檢查句尾標點，並讀出句子確認意思。"
+          ],
+          "rubric": "先檢查意思是否符合任務，再看目標形式。內容可不同於示例；拼字可查字典。G1 可先口述由成人記錄，G2/G3 逐步自行書寫。"
+        }
+      },
+      {
+        "term": 2,
+        "title": "時間對照、比較與句子連接",
+        "units": [
+          "g3-u07",
+          "g3-u08",
+          "g3-u09",
+          "g3-u10",
+          "g3-u11",
+          "g3-u12"
+        ],
+        "review": [
+          {
+            "prompt": "哪個說法正確？",
+            "options": [
+              "先看情境和動詞意思，再選時態",
+              "有 now 一定用進行式",
+              "沒有 now 就不能用進行式"
+            ],
+            "answer": 0,
+            "why": "時間詞是線索，不是唯一規則。",
+            "id": "g3-t2-review-1",
+            "source": "g3-u07"
+          },
+          {
+            "prompt": "描述每天上學方式，選哪句？",
+            "options": [
+              "Ben walk to school.",
+              "Ben is walk to school.",
+              "Ben walks to school."
+            ],
+            "answer": 2,
+            "why": "單數主詞的習慣動作用 walks。",
+            "id": "g3-t2-review-2",
+            "source": "g3-u07"
+          },
+          {
+            "prompt": "A book：2 kg；B book：1 kg。Book A is ___ than Book B.",
+            "options": [
+              "heavier",
+              "lighter",
+              "cheaper"
+            ],
+            "answer": 0,
+            "why": "題目提供重量；A 較重，所以是 heavier。",
+            "id": "g3-t2-review-3",
+            "source": "g3-u09"
+          },
+          {
+            "prompt": "哪一句需要修改？",
+            "options": [
+              "This box is bigger than that box.",
+              "This box is more bigger than that box.",
+              "This box is smaller than that box."
+            ],
+            "answer": 1,
+            "why": "more bigger 重複標示比較，應保留 bigger。",
+            "id": "g3-t2-review-4",
+            "source": "g3-u09"
+          },
+          {
+            "prompt": "Who helps Mia? who 是？",
+            "options": [
+              "主詞",
+              "受詞",
+              "地點片語"
+            ],
+            "answer": 0,
+            "why": "who 指未知的做動作的人。",
+            "id": "g3-t2-review-5",
+            "source": "g3-u12"
+          },
+          {
+            "prompt": "回答 Why are you happy?，哪個直接回答原因？",
+            "options": [
+              "At school.",
+              "On Monday.",
+              "Because it is my birthday."
+            ],
+            "answer": 2,
+            "why": "Because 後交代原因。",
+            "id": "g3-t2-review-6",
+            "source": "g3-u12"
+          }
+        ],
+        "project": {
+          "title": "我的人物小報導",
+          "prompt": "先寫至少三個不同 Wh- 問題並回答，再用 5–6 句介紹同一人物。包含日常、一次過去活動或此刻活動，至少一個合理連接詞。",
+          "frames": [
+            "Where does ____ live?",
+            "What does ____ do after school?",
+            "What did ____ do yesterday?",
+            "____ lives ____."
+          ],
+          "sample": "Mia lives in Taipei. She reads after school. She likes stories, so she visits the library on Saturdays. Yesterday, she read a book about birds. Today, she is drawing a bird. Her picture is beautiful.",
+          "checklist": [
+            "讀者能理解我想表達的人、事物或時間。",
+            "Wh- 詞符合想問的資訊，does/did 後用原形。",
+            "我的句首、專有名詞和 I 使用大寫。",
+            "我檢查句尾標點，並讀出句子確認意思。"
+          ],
+          "rubric": "先檢查意思是否符合任務，再看目標形式。內容可不同於示例；拼字可查字典。G1 可先口述由成人記錄，G2/G3 逐步自行書寫。"
+        }
+      }
+    ]
+  }
+]
