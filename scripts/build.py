@@ -24,9 +24,9 @@ def header(path,active=''):
     return f'''<a class="skip" href="#main">跳到主要內容</a><header class="site-header"><div class="header-inner">
     {link(path,'index.html','<span class="brand-mark" aria-hidden="true">g.</span><span>Grammar Journey<small>英文文法學習室</small></span>','brand')}
     <nav aria-label="主要導覽">{link(path,'index.html','開始學習','nav-link '+('active' if active=='home' else ''))}{link(path,'curriculum/index.html','六年課程地圖','nav-link '+('active' if active=='map' else ''))}{link(path,'guide/index.html','使用指南','nav-link '+('active' if active=='guide' else ''))}</nav>
-    <span class="preview-label">G1–G3 課程</span></div></header>'''
-def shell(path,title,body,active='',color='blue',printpage=False,description='Grade 1–3 共 36 個英文文法單元，含情境例句、互動練習、寫作與可列印學習單。'):
-    return f'''<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{e(title)} · Grammar Journey</title><meta name="description" content="{e(description)}"><meta name="robots" content="noindex,follow"><link rel="icon" type="image/svg+xml" href="{href(path,'assets/favicon.svg')}"><link rel="stylesheet" href="{asset(path,'assets/style.css')}"><link rel="stylesheet" media="print" href="{asset(path,'assets/print.css')}"><script defer src="{asset(path,'assets/app.js')}"></script></head><body class="theme-{color}{' print-page' if printpage else ''}">{header(path,active)}{body}<footer class="site-footer"><div><span class="footer-brand">Grammar Journey</span><p>{DISCLAIMER}</p><p class="fine">教材 v1.0 · 2026.09　<span>G1–G3 共 36 課已開放；G5 保留 1 課示範。自主編寫教材待教師審閱。</span></p></div>{link(path,'guide/index.html#privacy','資料與隱私說明')}</footer></body></html>'''
+    <span class="preview-label">G1–G6 課程</span></div></header>'''
+def shell(path,title,body,active='',color='blue',printpage=False,description='Grade 1–6 共 72 個英文文法單元，含情境例句、互動練習、寫作與可列印學習單。'):
+    return f'''<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{e(title)} · Grammar Journey</title><meta name="description" content="{e(description)}"><meta name="robots" content="noindex,follow"><link rel="icon" type="image/svg+xml" href="{href(path,'assets/favicon.svg')}"><link rel="stylesheet" href="{asset(path,'assets/style.css')}"><link rel="stylesheet" media="print" href="{asset(path,'assets/print.css')}"><script defer src="{asset(path,'assets/app.js')}"></script></head><body class="theme-{color}{' print-page' if printpage else ''}">{header(path,active)}{body}<footer class="site-footer"><div><span class="footer-brand">Grammar Journey</span><p>{DISCLAIMER}</p><p class="fine">教材 v2.0 · 2026.09　<span>G1–G6 共 72 課已開放。自主編寫教材待教師審閱。</span></p></div>{link(path,'guide/index.html#privacy','資料與隱私說明')}</footer></body></html>'''
 def crumb(path,items):
     parts=[link(path,'index.html','首頁')]
     for target,label in items:
@@ -47,15 +47,15 @@ def cards(path,units=UNITS):
         out+=f'''<article class="course-card theme-{u['color']}"><div class="card-top"><span class="grade-label">GRADE {u['grade']}</span><span class="unit-label">UNIT {u['number']:02}</span></div>{art(u)}<div class="card-content"><p class="eyebrow">{u['tag']}</p><h2>{e(u['topic'])}</h2><p>{u['short']}</p><div class="card-meta"><span>4 個學習小節</span><span>練習＋寫作</span></div>{link(path,route(u),'進入單元 <span aria-hidden="true">↗</span>','button full')}</div></article>'''
     return out+'</div>'
 def grade_cards(path):
-    subtitles={1:('從詞語到完整句','名詞、代名詞、be、形容詞、位置與四種句型。'),2:('把日常與時間說清楚','複數、受格、現在式、過去式與未來計畫。'),3:('把句子寫得更豐富','所有格、進行式、副詞、比較與句子連接。')}
+    subtitles={1:('從詞語到完整句','名詞、代名詞、be、形容詞、位置與四種句型。'),2:('把日常與時間說清楚','複數、受格、現在式、過去式與未來計畫。'),3:('把句子寫得更豐富','所有格、進行式、副詞、比較與句子連接。'),4:('連起事件與原因','時態深化、情態動詞、受詞與原因／時間子句。'),5:('表達經驗與細節','完成式、被動、關係子句與條件表達。'),6:('讓段落更清楚','假設、轉述、句型變化、連貫與修訂。')}
     output='<div class="course-grid">'
     for g,(title,desc) in subtitles.items():
-        output+=f'<article class="grade-card theme-{ {1:"blue",2:"violet",3:"teal"}[g]}"><p class="eyebrow">GRADE {g}</p><h2>{title}</h2><p>{desc}</p><p class="fine">2 個 Term · 12 個 Unit · 2 次學期複習</p>{link(path,f"grades/g{g}/index.html","查看課程與開始學習 →","button full")}</article>'
+        output+=f'<article class="grade-card theme-{ {1:"blue",2:"violet",3:"teal",4:"blue",5:"violet",6:"teal"}[g]}"><p class="eyebrow">GRADE {g}</p><h2>{title}</h2><p>{desc}</p><p class="fine">2 個 Term · 12 個 Unit · 2 次學期複習</p>{link(path,f"grades/g{g}/index.html","查看課程與開始學習 →","button full")}</article>'
     return output+'</div>'
 def home():
     path='index.html'
-    body=f'''<main id="main" tabindex="-1" class="home-main"><section class="home-heading"><div><p class="eyebrow">LEARN IT. USE IT.</p><h1>從一句話開始，<br>一步一步學會表達。</h1><p class="intro">Grade 1–3 的 36 個完整單元，循序閱讀、練習，再寫出自己的句子。</p></div><div class="edition"><strong>36</strong><span>課程單元<br>開放學習</span></div></section>{grade_cards(path)}<section class="learning-strip" aria-labelledby="flow-title"><div><p class="eyebrow">YOUR LEARNING PATH</p><h2 id="flow-title">每一課，都有一個小進步。</h2></div><ol><li><b>01</b>看例子</li><li><b>02</b>懂用法</li><li><b>03</b>試一試</li><li><b>04</b>寫出來</li></ol></section><section class="featured-lessons"><h2>也可以從熟悉的主題開始</h2><p>每個教學重點至少五個情境例句；先做暖身，確認先備能力。</p>{cards(path,[BY_ID['g1-u06'],BY_ID['g2-u06'],BY_ID['g3-u09']])}</section><section class="home-bottom"><div><h2>看見整條學習路線</h2><p>G1–G3 已完成；G4–G6 保留規劃方向與 G5 示範課。</p>{link(path,'curriculum/index.html','查看六年課程地圖 →','text-link')}</div><div><h2>一起陪孩子學習</h2><p>每課附解析、寫作判準與可列印學習單。</p>{link(path,'guide/index.html','閱讀家長與教師指南 →','text-link')}</div></section></main>'''
-    write(path,shell(path,'Grade 1–3 英文文法課程',body,'home'))
+    body=f'''<main id="main" tabindex="-1" class="home-main"><section class="home-heading"><div><p class="eyebrow">LEARN IT. USE IT.</p><h1>從一句話開始，<br>一步一步學會表達。</h1><p class="intro">Grade 1–6 的 72 個完整單元，循序閱讀、練習，再寫出自己的句子。</p></div><div class="edition"><strong>72</strong><span>課程單元<br>開放學習</span></div></section>{grade_cards(path)}<section class="learning-strip" aria-labelledby="flow-title"><div><p class="eyebrow">YOUR LEARNING PATH</p><h2 id="flow-title">每一課，都有一個小進步。</h2></div><ol><li><b>01</b>看例子</li><li><b>02</b>懂用法</li><li><b>03</b>試一試</li><li><b>04</b>寫出來</li></ol></section><section class="featured-lessons"><h2>也可以從熟悉的主題開始</h2><p>每個教學重點至少五個情境例句；先做暖身，確認先備能力。</p>{cards(path,[BY_ID['g1-u06'],BY_ID['g2-u06'],BY_ID['g3-u09']])}</section><section class="home-bottom"><div><h2>看見整條學習路線</h2><p>六個年級循序銜接，從完整句到段落與修訂。</p>{link(path,'curriculum/index.html','查看六年課程地圖 →','text-link')}</div><div><h2>一起陪孩子學習</h2><p>每課附解析、寫作判準與可列印學習單。</p>{link(path,'guide/index.html','閱讀家長與教師指南 →','text-link')}</div></section></main>'''
+    write(path,shell(path,'Grade 1–6 英文文法課程',body,'home'))
 
 def prerequisite_links(path,u):
     ids=u.get('prerequisites',[])
@@ -67,10 +67,10 @@ def course_navigation(path,u):
     links=[]
     if pos:links.append(link(path,route(peers[pos-1]),f'← 上一課 U{peers[pos-1]["number"]:02}'))
     links.append(link(path,f'grades/g{u["grade"]}/index.html','年級課程目錄'))
-    if u['grade']<=3 and u['number'] in [6,12]:
+    if u['number'] in [6,12]:
         links.append(link(path,f'grades/g{u["grade"]}/term-{u["term"]}/review.html','學期複習與作品檢核 →'))
     if pos+1<len(peers):links.append(link(path,route(peers[pos+1]),f'下一課 U{peers[pos+1]["number"]:02} →'))
-    elif u['grade'] in [1,2]:links.append(link(path,f'grades/g{u["grade"]+1}/index.html',f'前往 Grade {u["grade"]+1} →'))
+    elif u['grade']<6:links.append(link(path,f'grades/g{u["grade"]+1}/index.html',f'前往 Grade {u["grade"]+1} →'))
     return '<nav class="course-navigation" aria-label="單元前後導覽">'+' '.join(links)+'</nav>'
 
 def option_label(text):
@@ -145,7 +145,7 @@ def printable(u,answers=False):
     content+=(f'<h3>參考作品</h3><p lang="en">{e(wt["sample"])}</p><p>{e(wt["rubric"])}</p>' if answers else '<div class="writing-lines"></div>')
     content+='<ul>'+''.join(f'<li>□ {e(c)}</li>' for c in wt['checklist'])+'</ul></section>'
     content+=deferred
-    body=f'''<main id="main" tabindex="-1" class="print-main"><div class="print-toolbar">{link(path,route(u),'← 回到教學單元')}<button class="button js-only" hidden data-print>列印 / 另存 PDF</button></div><header class="print-heading"><p>GRAMMAR JOURNEY · G{u['grade']} / T{u['term']} / U{u['number']:02} · v1.0</p><h1>{e(u['topic'])}</h1><h2>{'答案與教學參考' if answers else '學生學習單'}</h2>{'' if answers else '<p>姓名：________________　日期：________________</p>'}<p>{'開放題的示例並非唯一答案，請依判準給予回饋。' if answers else '不需要電腦也能練習。可用瀏覽器的列印功能直接列印。'}</p></header><section class="print-section"><h2>情境資料</h2><p>{e(u['scene_intro'])}</p>{''.join(f'<p><b>{e(w)}</b> <span lang="en">{e(s)}</span></p>' for w,s in u['scene'])}</section>{content}</main>'''
+    body=f'''<main id="main" tabindex="-1" class="print-main"><div class="print-toolbar">{link(path,route(u),'← 回到教學單元')}<button class="button js-only" hidden data-print>列印 / 另存 PDF</button></div><header class="print-heading"><p>GRAMMAR JOURNEY · G{u['grade']} / T{u['term']} / U{u['number']:02} · v{e(u.get('content_version','1.0'))}</p><h1>{e(u['topic'])}</h1><h2>{'答案與教學參考' if answers else '學生學習單'}</h2>{'' if answers else '<p>姓名：________________　日期：________________</p>'}<p>{'開放題的示例並非唯一答案，請依判準給予回饋。' if answers else '不需要電腦也能練習。可用瀏覽器的列印功能直接列印。'}</p></header><section class="print-section"><h2>情境資料</h2><p>{e(u['scene_intro'])}</p>{''.join(f'<p><b>{e(w)}</b> <span lang="en">{e(s)}</span></p>' for w,s in u['scene'])}</section>{content}</main>'''
     write(path,shell(path,u['topic']+(' 答案' if answers else ' 學習單'),body,color=u['color'],printpage=True))
 
 def term_outline(path,data):
@@ -162,21 +162,15 @@ def overview(grade=None):
     if grade:
         en,title,desc=labels[grade]
         inner=f'<p class="eyebrow">GRADE {grade} · {en}</p><h1>{title}</h1><p class="intro">{desc}</p>'
-        if grade<=3:
-            data=next(x for x in CURRICULUM if x['grade']==grade)
-            inner+='<p class="note">全年 12 個 Unit，分為兩個 Term。每課分四個學習小節；建議每 Term 用 12–15 週完成單元，另留 3–5 週複習與寫作回饋，可依先備能力調整。</p><nav class="term-tabs" aria-label="學期導覽"><a href="#term-1">Term 1 · U01–U06</a><a href="#term-2">Term 2 · U07–U12</a></nav>'
-            inner+=''.join(term_outline(path,t) for t in data['terms'])
-        else:
-            available=[u for u in UNITS if u['grade']==grade]
-            inner+='<div class="empty-state"><h2>完整年級課程尚在規劃</h2><p>目前 G1–G3 已全部開放；G5 保留一個示範單元。下方僅列已完成的教材。</p></div>'
-            if available:inner+=cards(path,available)
-            inner+=link(path,'index.html','前往 G1–G3 課程','button')
+        data=next(x for x in CURRICULUM if x['grade']==grade)
+        inner+='<p class="note">全年 12 個 Unit，分為兩個 Term。每課分四個學習小節；建議每 Term 用 12–15 週完成單元，另留 3–5 週複習與寫作回饋，可依先備能力調整。</p><nav class="term-tabs" aria-label="學期導覽"><a href="#term-1">Term 1 · U01–U06</a><a href="#term-2">Term 2 · U07–U12</a></nav>'
+        inner+=''.join(term_outline(path,t) for t in data['terms'])
     else:
-        inner='<p class="eyebrow">THE BIG PICTURE</p><h1>六年，一步一步累積。</h1><p class="intro">從詞語到段落。年級是建議起點，先備能力更重要；G1–G3 共 36 課已開放。</p><div class="grade-map">'
+        inner='<p class="eyebrow">THE BIG PICTURE</p><h1>六年，一步一步累積。</h1><p class="intro">從詞語到段落。年級是建議起點，先備能力更重要；G1–G6 共 72 課已開放。</p><div class="grade-map">'
         for g,(en,title,desc) in labels.items():
-            status='12 課＋2 次學期複習' if g<=3 else ('1 個示範單元' if g==5 else '課程規劃中')
+            status='12 課＋2 次學期複習'
             inner+=f'<article class="map-row"><strong class="map-grade">{g:02}</strong><div><p class="eyebrow">GRADE {g} · {en}</p><h2>{title}</h2><p>{desc}</p></div><div><span class="pill">{status}</span>{link(path,f"grades/g{g}/index.html","查看年級 →","text-link")}</div></article>'
-        inner+='</div><p class="note">原規劃每年級 12 課，G1–G3 完成 36 課，另有 G5 示範 1 課。G1/G2 的主題參考教材目錄重新編排；網站單元編號不等同原書，G3–G6 為自主延伸，非官方課綱。</p>'+link(path,'curriculum/grade-1-3.md','下載 G1–G3 課程編排文件（Markdown）','button secondary')
+        inner+='</div><p class="note">每年級 12 課，共 72 課，另有 12 次學期複習。G1/G2 的主題參考教材目錄重新編排；網站單元編號不等同原書，G3–G6 為自主延伸，非官方課綱。</p>'+link(path,'curriculum/grade-1-3.md','下載 G1–G3 課程編排文件（Markdown）','button secondary')+' '+link(path,'curriculum/grade-4-6.md','下載 G4–G6 課程編排文件（Markdown）','button secondary')+' '+link(path,'curriculum/grade-1-6.md','下載完整六年課程編排（Markdown）','text-link')
     body=f'<main id="main" tabindex="-1" class="overview-main">{crumb(path,[(None,f"Grade {grade}" if grade else "六年課程地圖")])}{inner}</main>'
     write(path,shell(path,f'Grade {grade}' if grade else '六年課程地圖',body,'map'))
 
@@ -191,27 +185,31 @@ def term_review(grade,data):
     body=f'<main id="main" tabindex="-1" class="guide-main term-review">{breadcrumbs}<p class="eyebrow">RETRIEVE · CONNECT · WRITE</p><h1>Term {data["term"]}：把學過的連起來</h1><p>先不看課文，試做六題，再讀解析。這是跨課抽樣檢核，不是完整程度測驗。可列印本頁；列印會包含已展開的解析。</p>{content}<section><h2>錯了，就回到這裡</h2><ul>'+''.join(f'<li>{link(path,route(BY_ID[uid]),e(uid.upper()+" "+BY_ID[uid]["topic"]))}</li>' for uid in sources)+f'</ul><p>形式錯：回到用法與對照；意思不清楚：回到情境卡；寫不出來：先口述，再用句框寫，最後拿掉句框重寫。</p></section><section><h2>整合作品：{e(wt["title"])}</h2><p>{e(wt["prompt"])}</p><p>再從本 Term 其他兩課各選一個已學重點加入作品。隔一週不看示例重寫一次，保留兩次作品比較。</p><ul>'+''.join(f'<li>{e(x)}</li>' for x in wt['checklist'])+f'</ul><details><summary>參考作品（可自行增加本學期的細節）</summary><p lang="en">{e(wt["sample"])}</p></details><p class="note">作品檢核：意思清楚、目標形式合宜、句子完整、修訂有進步。每項記「可獨立完成／需要提示／先複習」，不用單一分數代表全部能力。</p></section>{link(path,f"grades/g{grade}/index.html","回年級課程目錄 →","button")}</main>'
     write(path,shell(path,f'G{grade} Term {data["term"]} 複習',body,'map'))
 
-def curriculum_document():
-    lines=['# Grade 1–3 英文文法課程編排 v1.0','', '更新：2026-09-19。每年級兩個 Term、每 Term 六個 Unit，共 36 課。G5-U03 另保留示範。', '', '## 來源與編排原則', '', 'G1/G2 參考使用者提供的三張教材目錄照片，重新組織成網站單元；編號不是原書頁碼或單元的一對一複製。G3 為自主延伸設計，非康橋或 MyGrammar 官方課綱。所有教材例句與練習皆自主撰寫。', '', '依辨認、理解、產出、寫作四層教學。每個用法分組至少五個不同情境例句，每句包含使用情境、英文、中文與目標形式。五種情境不等於五種不同的文法意義。', '', '每課包含兩題先備檢核、三組各三題核心選擇題、三題改寫／開放題、寫作與三題課末檢核；另附學生學習單及獨立答案。每 Term 六題跨課檢核與作品回顧。', '', '每課四個 35–40 分鐘小節，可拆為家庭短時段；每 Term 單元約 12–15 週，另保留 3–5 週複習、作品與補強。不是每個學生都需要相同課時。', '', '## 與原始目錄／對話的對應', '', '- G1 名詞、普通／專有、代名詞與 I/me、動作、簡單現在、主詞／述語、形容詞／冠詞、位置、四類句型均涵蓋；增加 be 專課與完整句修訂，延續已公開 U06。', '- G2 句子／標點、主詞／述語、規則與不規則複數、集合名詞、簡單現在、過去／未來與不規則動詞均涵蓋；補上受格、問句否定與片語以串接寫作。', '- G3 對話列出的詞性回顧、所有格、助動詞、現在／過去進行、現在式對照、副詞、比較／最高級、連接詞／複合句、Wh-、there is/are、可數／不可數均整併為 12 課。U01 較多，分四小節教：詞性與名詞、數量、some/any、存在句；助動詞 have 的完成式只辨認，不納入評量。', '', '## 螺旋與教學邊界', '', '- 名詞：G1 辨認與基本單複數 → G2 完整常用複數／集合 → G3 數量與所有關係。', '- 動詞：G1 be／動作與第三人稱初步接觸 → G2 現在、過去、未來 → G3 現在／過去進行與使用對照。', '- 句子：G1 主詞述語與四種句型 → G2 片語擴充 → G3 副詞、比較、連接與提問。', '- G1 可口述代替大量抄寫；G2 寫 3–5 句；G3 寫 4–6 句並加入修訂。術語服務於表達，不只考圈字。', '- 不把 a/an 教成只看字母；不把所有 f/fe 或 y 一律套用；不把 now 當進行式唯一判據；區分 be/do 問句及 did/does 後原形。', '- 集合名詞以美式團體整體用法示範，說明英式用法可不同；不把變體當全球唯一正解。', '- 不用性別姓名刻板假定評分；題幹需要時明確指定代名詞語境。', '- 暖身回取先備課程；課末更換情境檢核；一日後針對錯誤再練，一週後重寫作品。', '', '## Scope & sequence', '']
+def curriculum_document(first=1,last=3):
+    lines=[f'# Grade {first}–{last} 英文文法課程編排 v2.0','', f'更新：2026-09-19。每年級兩個 Term、每 Term 六個 Unit，本文件共 {(last-first+1)*12} 課；全站六年共 72 課。', '', '## 來源與編排原則', '', 'G1/G2 參考使用者提供的三張教材目錄照片，重新組織成網站單元；編號不是原書頁碼或單元的一對一複製。G3–G6 為自主延伸設計，非康橋或 MyGrammar 官方課綱。所有教材例句與練習皆自主撰寫。', '', '依辨認、理解、產出、寫作四層教學。每個用法分組至少五個不同情境例句，每句包含使用情境、英文、中文與目標形式。五種情境不等於五種不同的文法意義。', '', '每課包含兩題先備檢核、三組各三題核心選擇題、三題改寫／開放題、寫作與三題課末檢核；另附學生學習單及獨立答案。每 Term 六題跨課檢核與作品回顧。', '', '每課四個 35–40 分鐘小節，可拆為家庭短時段；每 Term 單元約 12–15 週，另保留 3–5 週複習、作品與補強。不是每個學生都需要相同課時。', '', '## 與原始目錄／對話的對應', '', '- G1 名詞、普通／專有、代名詞與 I/me、動作、簡單現在、主詞／述語、形容詞／冠詞、位置、四類句型均涵蓋；增加 be 專課與完整句修訂，延續已公開 U06。', '- G2 句子／標點、主詞／述語、規則與不規則複數、集合名詞、簡單現在、過去／未來與不規則動詞均涵蓋；補上受格、問句否定與片語以串接寫作。', '- G3 對話列出的詞性回顧、所有格、助動詞、現在／過去進行、現在式對照、副詞、比較／最高級、連接詞／複合句、Wh-、there is/are、可數／不可數均整併為 12 課。U01 較多，分四小節教：詞性與名詞、數量、some/any、存在句；助動詞 have 的完成式只辨認，不納入評量。', '', '## 螺旋與教學邊界', '', '- 名詞：G1 辨認與基本單複數 → G2 完整常用複數／集合 → G3 數量與所有關係。', '- 動詞：G1 be／動作與第三人稱初步接觸 → G2 現在、過去、未來 → G3 現在／過去進行與使用對照。', '- 句子：G1 主詞述語與四種句型 → G2 片語擴充 → G3 副詞、比較、連接與提問。', '- G1 可口述代替大量抄寫；G2 寫 3–5 句；G3 寫 4–6 句並加入修訂。術語服務於表達，不只考圈字。', '- 不把 a/an 教成只看字母；不把所有 f/fe 或 y 一律套用；不把 now 當進行式唯一判據；區分 be/do 問句及 did/does 後原形。', '- 集合名詞以美式團體整體用法示範，說明英式用法可不同；不把變體當全球唯一正解。', '- 不用性別姓名刻板假定評分；題幹需要時明確指定代名詞語境。', '- 暖身回取先備課程；課末更換情境檢核；一日後針對錯誤再練，一週後重寫作品。', '']
+    lines += ['## G4–G6 的銜接與教學注意事項', '', '- G4：先比較已學時態，再學情態動詞、動詞搭配與受詞，最後加入原因、讓步、時間與條件子句。U10 的 for/nor 只初步辨認；不把 nor 倒裝列為獨立寫作要求。', '- G5：現在完成式依形式 → 意義 → 與過去式比較三課銜接；主動受詞與過去分詞準備好後才引入被動。關係子句先處理主詞角色，再於 G6 學受詞省略與非限定用法。', '- G6：先統整時間線，再理解完成進行式與被動，銜接假設與關係子句。下學期將轉述、分詞形容詞與片語動詞帶入句型選擇、段落連貫和修訂。', '- G4 寫約 5–6 句；G5 約 6–8 句；G6 逐步到 8–10 句。先允許句框與口述，熟悉後再撤去支架，不以篇幅或難句數量取代意義清楚。', '- 完成進行式、非限定關係子句、compound-complex 以初步辨認和有支架的仿寫為起點。年級不是能力保證，未具先備者回到連結課程補強。', '- must not 表禁止，do not have to 表不必；must 也可表推論，需看情境。will 與 going to 有用法重疊，例題需給具體決策／計畫背景。', '- 完成式不能只背中文「已經」；已結束的特定過去時間與延續到現在的時間線要分開。狀態動詞如 know 通常不用完成進行式。', '- 不把所有動詞改成被動：先確認及物受詞；雙受詞與 explain 等搭配分開教。to 不定詞與 -ing 搭配依動詞學，避免宣稱可全面互換。', '- 限定與非限定關係子句先比較指涉範圍，再談逗號；非限定不能用 that，也不能省略關係代名詞。主詞角色與受詞角色不混為一談。', '- 間接轉述的人稱、時間副詞與時態依報導視角處理；仍真實的事實不強制回移。-ing/-ed 形容詞依感受來源與感受者區分，不用「物／人」當唯一規則。', '- 片語動詞連同受詞位置學：turn it on 與 look for it 不可套用同一種拆法。however 不等同並列連接詞，本課採句號加 However, 的安全基礎形式。', '- 每個分組五種情境與例句是理解的最低支架；不宣稱已列盡所有字義。差異對照說明兩句各自合適的情境，避免只改表面字尾。', '- 客觀題聚焦一項差異，開放題接受意思與形式都合宜的多種答案。暖身與學期複習刻意回取舊題，不能宣稱全是獨立測驗題。', '- 校對順序：意思與時間線 → 句子完整與銜接 → 主詞一致與形式 → 指涉 → 大小寫與標點。保存初稿、修訂稿及修改理由。', '', '## 各單元詳細編排', '']
     for grade in CURRICULUM:
+        if not first<=grade['grade']<=last: continue
         lines+= [f'### Grade {grade["grade"]}','']
         for term in grade['terms']:
             lines += [f'#### Term {term["term"]} — {term["title"]}','']
             for uid in term['units']:
                 u=BY_ID[uid]
-                lines += [f'##### {uid.upper()} · {u["topic"]}', '', '- 學習目標：'+'；'.join(u['goals']),'- 先備：'+('、'.join(u['prerequisites']) or '口語辨認生活事物'),'- 教學重點：'+'；'.join(g['title'] for g in u['usage_groups']),'- 目標句：'+u['usage_groups'][0]['cases'][0]['example'],'- 寫作：'+u['write']['prompt'],f'- 教材：{route(u)}', '']
+                lines += [f'##### {uid.upper()} · {u["topic"]}', '', '- 學習目標：'+'；'.join(u['goals']),'- 先備：'+('、'.join(u['prerequisites']) or '口語辨認生活事物'),'- 教學重點：'+'；'.join(g['title'] for g in u['usage_groups']),'- 形式與邊界：'+'；'.join(g['form']+' — '+g['note'] for g in u['usage_groups']),'- 目標句：'+u['usage_groups'][0]['cases'][0]['example'],'- 寫作：'+u['write']['prompt'],f'- 教材：[開啟單元](../{route(u)})', '']
             lines += ['學期末：六題跨課抽樣檢核＋整合作品，依解析連回對應課程。','']
-    lines += ['## 編輯與驗收', '', '教材單一來源為 content/units.json，學期順序與複習題為 content/curriculum.json。維持既有網址不改名。執行 python3 scripts/build.py、python3 tests/validate.py、node --check assets/app.js。', '', '驗收包含 G1–G3 各 12 課且順序連續、先備存在且不倒置、每個用法分組至少五種情境、選項不重複且答案有效、全部頁面及錨點可達、學習單與答案分離、所有學期複習可回到來源課程。', '', '教材尚待教師審閱，不以自動檢查替代語意與教學成效評估。G4/G6 尚無完整教材，G5 僅一個示範；不標成六年全部完成。', '']
-    write('curriculum/grade-1-3.md','\n'.join(lines))
+    lines += ['## 編輯與驗收', '', '教材單一來源為 content/units.json，學期順序與複習題為 content/curriculum.json。維持既有網址不改名。執行 python3 scripts/build.py、python3 tests/validate.py、node --check assets/app.js。', '', '驗收包含 G1–G6 各 12 課且順序連續、先備存在且不倒置、每個用法分組至少五種情境、選項不重複且答案有效、全部頁面及錨點可達、學習單與答案分離、所有學期複習可回到來源課程。', '', '教材尚待教師審閱，不以自動檢查替代語意與教學成效評估。六年內容已完成編寫，但不宣稱能力等級認證或已完成實際教學成效驗證。', '']
+    write(f'curriculum/grade-{first}-{last}.md','\n'.join(lines))
 def guide():
     path='guide/index.html'
-    body=f'''<main id="main" tabindex="-1" class="guide-main">{crumb(path,[(None,'使用指南')])}<p class="eyebrow">FOR LEARNERS & GROWN-UPS</p><h1>讓每一次練習，都接近真正的表達。</h1><p class="intro">可以和孩子一起讀，也可以讓孩子依自己的步調試一試。</p><section><h2>從哪一課開始？</h2><p>G1 從名詞與句子開始；G2 建立現在、過去與未來表達；G3 擴充進行式、比較與句子連接。G5 示範假設已接觸現在完成式。每課都附暖身題與先備小補充，年級不代表固定程度。</p></section><section><h2>一課怎麼進行？</h2><ol><li>讀目標，做兩題暖身。</li><li>看情境，先談意思，再找形式。</li><li>分段練習，查看答案與原因。</li><li>在紙上完成小作品，依檢核表修改。</li><li>用三題課末檢核決定要複習哪一段。</li></ol><p>每單元建議四個 35–40 分鐘學習時段；在家可拆成更短的段落。答得快不代表一定學會，能用在新句子裡更重要。</p></section><section><h2>給回饋時，先看意思</h2><p>選擇題可以即時檢查。改寫與寫作有多種合理答案，請依參考答案及判準自評，不以唯一字串判定。初學者可先口述，成人協助記錄，不把書寫速度當文法能力。</p></section><section><h2>列印與離線閱讀</h2><p>每課側欄有「列印學習單」與「答案與解析」。學習單不含答案；答案另頁列印。你也可以使用瀏覽器的列印功能另存 PDF。即使關閉 JavaScript，教材、連結與答案仍可使用。</p></section><section id="privacy"><h2>資料與隱私</h2><p>這個網站不要求登入，也不收集姓名或上傳答案。作答選擇與檢核勾選不會持久儲存；頁面重新載入或離開後，請勿期待保留。網站沒有分析追蹤或外部字型。網站由 GitHub Pages 提供服務，主機可能依其服務政策記錄連線資訊。</p></section><section><h2>教材來源與目前範圍</h2><p>{DISCLAIMER}</p><p>G1–G3 各 12 課，共 36 課完整教學內容，另有每年級兩次學期複習。G5 保留 U03 示範，其餘 G4–G6 仍為規劃方向。每課都有例句、練習、解析、寫作與學習單。教材待教師審閱，請依實際學習反應調整。</p></section>{link(path,'index.html','選擇年級，開始學習','button')}</main>'''
+    body=f'''<main id="main" tabindex="-1" class="guide-main">{crumb(path,[(None,'使用指南')])}<p class="eyebrow">FOR LEARNERS & GROWN-UPS</p><h1>讓每一次練習，都接近真正的表達。</h1><p class="intro">可以和孩子一起讀，也可以讓孩子依自己的步調試一試。</p><section><h2>從哪一課開始？</h2><p>G1 從名詞與句子開始；G2 建立現在、過去與未來表達；G3 擴充進行式、比較與句子連接。G4 深化時態與子句；G5 學完成式、被動與關係子句；G6 整合假設、轉述與寫作修訂。完成進行式、非限定關係子句與複合複句可先辨認、仿寫，再視能力增加產出。每課都附暖身題與先備小補充，年級不代表固定程度。</p></section><section><h2>一課怎麼進行？</h2><ol><li>讀目標，做兩題暖身。</li><li>看情境，先談意思，再找形式。</li><li>分段練習，查看答案與原因。</li><li>在紙上完成小作品，依檢核表修改。</li><li>用三題課末檢核決定要複習哪一段。</li></ol><p>每單元建議四個 35–40 分鐘學習時段；在家可拆成更短的段落。答得快不代表一定學會，能用在新句子裡更重要。</p></section><section><h2>給回饋時，先看意思</h2><p>選擇題可以即時檢查。改寫與寫作有多種合理答案，請依參考答案及判準自評，不以唯一字串判定。初學者可先口述，成人協助記錄，不把書寫速度當文法能力。</p></section><section><h2>列印與離線閱讀</h2><p>每課側欄有「列印學習單」與「答案與解析」。學習單不含答案；答案另頁列印。你也可以使用瀏覽器的列印功能另存 PDF。即使關閉 JavaScript，教材、連結與答案仍可使用。</p></section><section id="privacy"><h2>資料與隱私</h2><p>這個網站不要求登入，也不收集姓名或上傳答案。作答選擇與檢核勾選不會持久儲存；頁面重新載入或離開後，請勿期待保留。網站沒有分析追蹤或外部字型。網站由 GitHub Pages 提供服務，主機可能依其服務政策記錄連線資訊。</p></section><section><h2>教材來源與目前範圍</h2><p>{DISCLAIMER}</p><p>G1–G6 各 12 課，共 72 課完整教學內容，另有每年級兩次學期複習。每課都有例句、練習、解析、寫作與學習單。教材待教師審閱，請依實際學習反應調整。</p></section>{link(path,'index.html','選擇年級，開始學習','button')}</main>'''
     write(path,shell(path,'使用指南',body,'guide'))
 
 def main():
     OUT.mkdir(exist_ok=True)
     shutil.copytree(ROOT/'assets',OUT/'assets',dirs_exist_ok=True)
     curriculum_document()
+    curriculum_document(4,6)
+    curriculum_document(1,6)
     home(); overview(); guide()
     for grade in CURRICULUM:
         for term in grade['terms']: term_review(grade['grade'],term)

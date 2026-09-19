@@ -633,5 +633,603 @@
         }
       }
     ]
+  },
+  {
+    "grade": 4,
+    "status": "complete",
+    "terms": [
+      {
+        "term": 1,
+        "title": "鞏固時態、學會情態表達",
+        "units": [
+          "g4-u01",
+          "g4-u02",
+          "g4-u03",
+          "g4-u04",
+          "g4-u05",
+          "g4-u06"
+        ],
+        "review": [
+          {
+            "prompt": "The bag of apples ___ red.",
+            "options": [
+              "are",
+              "is"
+            ],
+            "answer": 1,
+            "why": "bag 才是主詞中心。",
+            "id": "g4-t1-review-1",
+            "source": "g4-u01"
+          },
+          {
+            "prompt": "習慣每天游泳。She ___ every day.",
+            "options": [
+              "swim",
+              "swims"
+            ],
+            "answer": 1,
+            "why": "單數習慣用 swims。",
+            "id": "g4-t1-review-2",
+            "source": "g4-u02"
+          },
+          {
+            "prompt": "I was walking when I ___ Mia.",
+            "options": [
+              "see",
+              "saw"
+            ],
+            "answer": 1,
+            "why": "看到是當次過去事件。",
+            "id": "g4-t1-review-3",
+            "source": "g4-u03"
+          },
+          {
+            "prompt": "事先訂好的旅行可用？",
+            "options": [
+              "did + 原形",
+              "be going to"
+            ],
+            "answer": 1,
+            "why": "going to 可說既定計畫。",
+            "id": "g4-t1-review-4",
+            "source": "g4-u04"
+          },
+          {
+            "prompt": "詢問能力用？",
+            "options": [
+              "Does she can draw?",
+              "Can she draw?"
+            ],
+            "answer": 1,
+            "why": "情態問句移動 can。",
+            "id": "g4-t1-review-5",
+            "source": "g4-u05"
+          },
+          {
+            "prompt": "should not 的功能？",
+            "options": [
+              "必定禁止",
+              "勸告不做"
+            ],
+            "answer": 1,
+            "why": "本課作負面建議，語氣與規定不同。",
+            "id": "g4-t1-review-6",
+            "source": "g4-u06"
+          }
+        ],
+        "project": {
+          "title": "小組合作約定",
+          "prompt": "寫 5–6 句約定：至少一項建議、一項義務、一項禁止與一項不必做的事。",
+          "frames": [
+            "We should ____.",
+            "We must ____.",
+            "We do not have to ____."
+          ],
+          "sample": "We should listen to each other. We must finish our poster by Friday. We must not copy another group. We have to write our names. We do not have to buy new paper. We should use both sides of each sheet.",
+          "checklist": [
+            "讀者能理解我想表達的人、事物或時間。",
+            "我檢查 should / should not + 原形，並能解釋一次形式選擇。",
+            "我的句首、專有名詞和 I 使用大寫。",
+            "我檢查句尾標點，並讀出句子確認意思。"
+          ],
+          "rubric": "先檢查意思是否符合任務，再看目標形式。內容可不同於示例；拼字可查字典。先自己寫，再說明為什麼選這個形式；若需要協助，先口述並參考句框。"
+        }
+      },
+      {
+        "term": 2,
+        "title": "動詞搭配、受詞與子句",
+        "units": [
+          "g4-u07",
+          "g4-u08",
+          "g4-u09",
+          "g4-u10",
+          "g4-u11",
+          "g4-u12"
+        ],
+        "review": [
+          {
+            "prompt": "___ is fun. 表示游泳活動。",
+            "options": [
+              "Swimmed",
+              "Swimming"
+            ],
+            "answer": 1,
+            "why": "動名詞可作主詞。",
+            "id": "g4-t2-review-1",
+            "source": "g4-u07"
+          },
+          {
+            "prompt": "將主詞換成 she：___ reads a story.",
+            "options": [
+              "Her",
+              "She"
+            ],
+            "answer": 1,
+            "why": "主詞使用 she。",
+            "id": "g4-t2-review-2",
+            "source": "g4-u08"
+          },
+          {
+            "prompt": "The chair near the window ___ free.",
+            "options": [
+              "are",
+              "is"
+            ],
+            "answer": 1,
+            "why": "chair 是中心名詞。",
+            "id": "g4-t2-review-3",
+            "source": "g4-u09"
+          },
+          {
+            "prompt": "He was tired, ___ he kept working. 表示轉折。",
+            "options": [
+              "so",
+              "but"
+            ],
+            "answer": 1,
+            "why": "後半與預期相反。",
+            "id": "g4-t2-review-4",
+            "source": "g4-u10"
+          },
+          {
+            "prompt": "表示因果：I wore a coat ___ it was cold.",
+            "options": [
+              "although",
+              "because"
+            ],
+            "answer": 1,
+            "why": "冷是穿外套的原因。",
+            "id": "g4-t2-review-5",
+            "source": "g4-u11"
+          },
+          {
+            "prompt": "We will walk if it ___ sunny.",
+            "options": [
+              "will is",
+              "is"
+            ],
+            "answer": 1,
+            "why": "if 子句用 is。",
+            "id": "g4-t2-review-6",
+            "source": "g4-u12"
+          }
+        ],
+        "project": {
+          "title": "兩種天氣的出遊計畫",
+          "prompt": "寫 5–6 句計畫，包含時間順序與至少兩個 if 備案。",
+          "frames": [
+            "Before ____, we will ____.",
+            "If ____, we will ____."
+          ],
+          "sample": "Before we leave, we will pack water. If it is sunny, we will walk to the park. If it rains, we will visit the museum. After we eat lunch, we will read our maps. When we return, we will write about the trip. We will share our stories.",
+          "checklist": [
+            "讀者能理解我想表達的人、事物或時間。",
+            "我檢查 時間子句 + 主句，並能解釋一次形式選擇。",
+            "我的句首、專有名詞和 I 使用大寫。",
+            "我檢查句尾標點，並讀出句子確認意思。"
+          ],
+          "rubric": "先檢查意思是否符合任務，再看目標形式。內容可不同於示例；拼字可查字典。先自己寫，再說明為什麼選這個形式；若需要協助，先口述並參考句框。"
+        }
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "status": "complete",
+    "terms": [
+      {
+        "term": 1,
+        "title": "完成式、被動與精確選詞",
+        "units": [
+          "g5-u01",
+          "g5-u02",
+          "g5-u03",
+          "g5-u04",
+          "g5-u05",
+          "g5-u06"
+        ],
+        "review": [
+          {
+            "prompt": "She has ___ the film.",
+            "options": [
+              "saw",
+              "seen"
+            ],
+            "answer": 1,
+            "why": "have/has 後使用 seen。",
+            "id": "g5-t1-review-1",
+            "source": "g5-u01"
+          },
+          {
+            "prompt": "for 是否只能搭完成式？",
+            "options": [
+              "是",
+              "不是"
+            ],
+            "answer": 1,
+            "why": "過去或未來也可說期間。",
+            "id": "g5-t1-review-2",
+            "source": "g5-u02"
+          },
+          {
+            "prompt": "We ___ a game last night.",
+            "options": [
+              "have played",
+              "played",
+              "has played"
+            ],
+            "answer": 1,
+            "why": "last night 是已結束的過去，用 played。",
+            "id": "g5-t1-review-3",
+            "source": "g5-u03"
+          },
+          {
+            "prompt": "Rice ___ washed first.",
+            "options": [
+              "are",
+              "is"
+            ],
+            "answer": 1,
+            "why": "rice 不可數用 is。",
+            "id": "g5-t1-review-4",
+            "source": "g5-u04"
+          },
+          {
+            "prompt": "This ___ be Ben's bag. 表示可能。",
+            "options": [
+              "does",
+              "could"
+            ],
+            "answer": 1,
+            "why": "could 可作推測。",
+            "id": "g5-t1-review-5",
+            "source": "g5-u05"
+          },
+          {
+            "prompt": "We avoid ___ indoors.",
+            "options": [
+              "shout",
+              "shouting"
+            ],
+            "answer": 1,
+            "why": "avoid 後動名詞。",
+            "id": "g5-t1-review-6",
+            "source": "g5-u06"
+          }
+        ],
+        "project": {
+          "title": "專題計畫與反思",
+          "prompt": "寫 6 句介紹專題選擇與工作方式，使用三個 ing 搭配和三個 to 搭配。",
+          "frames": [
+            "We enjoy ____.",
+            "We decided to ____."
+          ],
+          "sample": "We enjoy making models. We decided to build a bridge. We plan to use old paper. We avoid wasting materials. We finished drawing our design. We hope to finish the model on Friday.",
+          "checklist": [
+            "讀者能理解我想表達的人、事物或時間。",
+            "我檢查 verb + gerund，並能解釋一次形式選擇。",
+            "我的句首、專有名詞和 I 使用大寫。",
+            "我檢查句尾標點，並讀出句子確認意思。"
+          ],
+          "rubric": "先檢查意思是否符合任務，再看目標形式。內容可不同於示例；拼字可查字典。先自己寫，再說明為什麼選這個形式；若需要協助，先口述並參考句框。"
+        }
+      },
+      {
+        "term": 2,
+        "title": "關係子句、條件與故事順序",
+        "units": [
+          "g5-u07",
+          "g5-u08",
+          "g5-u09",
+          "g5-u10",
+          "g5-u11",
+          "g5-u12"
+        ],
+        "review": [
+          {
+            "prompt": "只寫 The girl who reads here. 通常是？",
+            "options": [
+              "完整主句",
+              "句子片段"
+            ],
+            "answer": 1,
+            "why": "還沒說這女孩的主要述語。",
+            "id": "g5-t2-review-1",
+            "source": "g5-u07"
+          },
+          {
+            "prompt": "We checked the map ___ we left. 先看圖後出發。",
+            "options": [
+              "after",
+              "before"
+            ],
+            "answer": 1,
+            "why": "before 符合順序。",
+            "id": "g5-t2-review-2",
+            "source": "g5-u08"
+          },
+          {
+            "prompt": "If the room ___ full, we can wait.",
+            "options": [
+              "will is",
+              "is"
+            ],
+            "answer": 1,
+            "why": "條件子句用 is。",
+            "id": "g5-t2-review-3",
+            "source": "g5-u09"
+          },
+          {
+            "prompt": "每個動詞都能用人＋物嗎？",
+            "options": [
+              "是",
+              "不是"
+            ],
+            "answer": 1,
+            "why": "需學特定動詞搭配。",
+            "id": "g5-t2-review-4",
+            "source": "g5-u10"
+          },
+          {
+            "prompt": "過去完成式參考？",
+            "options": [
+              "只要有 before 就一定用",
+              "另一個過去時點"
+            ],
+            "answer": 1,
+            "why": "須理解時間關係。",
+            "id": "g5-t2-review-5",
+            "source": "g5-u11"
+          },
+          {
+            "prompt": "同一人物多次重複，適當作法？",
+            "options": [
+              "把所有名字刪掉",
+              "用清楚的代名詞或合句"
+            ],
+            "answer": 1,
+            "why": "指代仍需清楚。",
+            "id": "g5-t2-review-6",
+            "source": "g5-u12"
+          }
+        ],
+        "project": {
+          "title": "一次合作完成的作品",
+          "prompt": "寫 6–8 句故事，包含簡單句、對等複合句、主從複合句；交代一個先前事件並修訂。",
+          "frames": [
+            "We ____.",
+            "We ____, but ____.",
+            "Because ____, ____."
+          ],
+          "sample": "We built a paper bridge. Mia drew the plan, and Ben cut the paper. I joined the pieces. Although the first bridge fell, we tried again. Ben had made a stronger base before we started the second bridge. The girl who checked our work was Mia. We smiled because the new bridge held a book.",
+          "checklist": [
+            "讀者能理解我想表達的人、事物或時間。",
+            "我檢查 一個獨立子句；兩個獨立子句＋連接詞，並能解釋一次形式選擇。",
+            "我的句首、專有名詞和 I 使用大寫。",
+            "我檢查句尾標點，並讀出句子確認意思。"
+          ],
+          "rubric": "先檢查意思是否符合任務，再看目標形式。內容可不同於示例；拼字可查字典。先自己寫，再說明為什麼選這個形式；若需要協助，先口述並參考句框。"
+        }
+      }
+    ]
+  },
+  {
+    "grade": 6,
+    "status": "complete",
+    "terms": [
+      {
+        "term": 1,
+        "title": "整合時態、假設與關係子句",
+        "units": [
+          "g6-u01",
+          "g6-u02",
+          "g6-u03",
+          "g6-u04",
+          "g6-u05",
+          "g6-u06"
+        ],
+        "review": [
+          {
+            "prompt": "I have seen it yesterday. 修改？",
+            "options": [
+              "I have saw it yesterday.",
+              "I saw it yesterday."
+            ],
+            "answer": 1,
+            "why": "明確結束的昨天使用 saw。",
+            "id": "g6-t1-review-1",
+            "source": "g6-u01"
+          },
+          {
+            "prompt": "We ___ been building a model.",
+            "options": [
+              "has",
+              "have"
+            ],
+            "answer": 1,
+            "why": "we 搭配 have。",
+            "id": "g6-t1-review-2",
+            "source": "g6-u02"
+          },
+          {
+            "prompt": "The model will ___ displayed.",
+            "options": [
+              "is",
+              "be"
+            ],
+            "answer": 1,
+            "why": "will 後 be。",
+            "id": "g6-t1-review-3",
+            "source": "g6-u03"
+          },
+          {
+            "prompt": "If we leave now, we ___ early.",
+            "options": [
+              "would arrived",
+              "will arrive"
+            ],
+            "answer": 1,
+            "why": "可行條件用 will 原形。",
+            "id": "g6-t1-review-4",
+            "source": "g6-u04"
+          },
+          {
+            "prompt": "who 可作口語受詞嗎？",
+            "options": [
+              "一律錯",
+              "可以"
+            ],
+            "answer": 1,
+            "why": "who I met 在一般用語自然。",
+            "id": "g6-t1-review-5",
+            "source": "g6-u05"
+          },
+          {
+            "prompt": "選正確句。",
+            "options": [
+              "Ben, that is my friend, is here.",
+              "Ben, who is my friend, is here."
+            ],
+            "answer": 1,
+            "why": "補充子句不用 that。",
+            "id": "g6-t1-review-6",
+            "source": "g6-u06"
+          }
+        ],
+        "project": {
+          "title": "人物報導與補充資訊",
+          "prompt": "寫 6–8 句報導，清楚交代已知人物，再加入兩個補充子句與一個限制性子句。",
+          "frames": [
+            "Mia, who ____, ____.",
+            "The ____ that ____ is ____."
+          ],
+          "sample": "Mia is our team leader. Mia, who lives nearby, helps us after school. The model that won the class prize is hers. It shows a small town. Her bridge, which is made of paper, is strong. We asked her to explain the design. She showed us her notes.",
+          "checklist": [
+            "讀者能理解我想表達的人、事物或時間。",
+            "我檢查 名詞 + 限制性關係子句，並能解釋一次形式選擇。",
+            "我的句首、專有名詞和 I 使用大寫。",
+            "我檢查句尾標點，並讀出句子確認意思。"
+          ],
+          "rubric": "先檢查意思是否符合任務，再看目標形式。內容可不同於示例；拼字可查字典。先自己寫，再說明為什麼選這個形式；若需要協助，先口述並參考句框。"
+        }
+      },
+      {
+        "term": 2,
+        "title": "轉述、語意、連貫與修訂",
+        "units": [
+          "g6-u07",
+          "g6-u08",
+          "g6-u09",
+          "g6-u10",
+          "g6-u11",
+          "g6-u12"
+        ],
+        "review": [
+          {
+            "prompt": "仍真實的事實一定強制回移嗎？",
+            "options": [
+              "一定",
+              "不一定"
+            ],
+            "answer": 1,
+            "why": "自然用法可保留現在式。",
+            "id": "g6-t2-review-1",
+            "source": "g6-u07"
+          },
+          {
+            "prompt": "The dog looks ___. 表示害怕。",
+            "options": [
+              "frightening",
+              "frightened"
+            ],
+            "answer": 1,
+            "why": "狗是感受者。",
+            "id": "g6-t2-review-2",
+            "source": "g6-u08"
+          },
+          {
+            "prompt": "選正確句。",
+            "options": [
+              "Please pick up it.",
+              "Please pick it up."
+            ],
+            "answer": 1,
+            "why": "代名詞放可分片語中間。",
+            "id": "g6-t2-review-3",
+            "source": "g6-u09"
+          },
+          {
+            "prompt": "Although I was tired, ___.",
+            "options": [
+              "but finished the card",
+              "I finished the card"
+            ],
+            "answer": 1,
+            "why": "although 子句後接完整主句，不重複用 but。",
+            "id": "g6-t2-review-4",
+            "source": "g6-u10"
+          },
+          {
+            "prompt": "The students made signs. They put them up. They 指？",
+            "options": [
+              "signs",
+              "students"
+            ],
+            "answer": 1,
+            "why": "They 是執行動作的學生；them 是標示。",
+            "id": "g6-t2-review-5",
+            "source": "g6-u11"
+          },
+          {
+            "prompt": "本篇一定要出現所有已學時態嗎？",
+            "options": [
+              "必須",
+              "不用"
+            ],
+            "answer": 1,
+            "why": "依作品意思選擇需要的形式。",
+            "id": "g6-t2-review-6",
+            "source": "g6-u12"
+          }
+        ],
+        "project": {
+          "title": "Grade 6 畢業小作品",
+          "prompt": "選一個真實或虛構的班級計畫，寫 8–10 句：目的、執行過程、結果與反思。至少使用三種已學句型；提交初稿、修訂稿與三項修改理由。不強制使用所有進階時態。",
+          "frames": [
+            "Our class wanted to ____.",
+            "Before ____, we ____.",
+            "We learned that ____."
+          ],
+          "sample": "Our class wanted to grow beans in the school garden. Before we planted the seeds, we had prepared the soil. Mia carried water, and Ben made labels. Because the weather was hot, we watered the plants early in the morning. We have checked their leaves every day since Friday. The beans that we planted are growing well. Some leaves were damaged by insects. However, most of the plants still look healthy. We learned that a garden needs regular care. If we continue to look after the plants, we will learn even more.",
+          "checklist": [
+            "讀者能理解我想表達的人、事物或時間。",
+            "我檢查 時間線 → 動詞；主詞 → 一致；對象 → 代名詞，並能解釋一次形式選擇。",
+            "我的句首、專有名詞和 I 使用大寫。",
+            "我檢查句尾標點，並讀出句子確認意思。"
+          ],
+          "rubric": "先檢查意思是否符合任務，再看目標形式。內容可不同於示例；拼字可查字典。先自己寫，再說明為什麼選這個形式；若需要協助，先口述並參考句框。"
+        }
+      }
+    ]
   }
 ]

@@ -9,12 +9,12 @@ from build import route, highlighted_example
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'dist'
 units=json.loads((ROOT/'content/units.json').read_text())
-expected={f'g{g}-u{n:02}' for g in [1,2,3] for n in range(1,13)}|{'g5-u03'}
+expected={f'g{g}-u{n:02}' for g in range(1,7) for n in range(1,13)}
 assert {u['id'] for u in units}==expected
 assert len(units)==len(expected)
 by_id={u['id']:u for u in units}
 curriculum=json.loads((ROOT/'content/curriculum.json').read_text())
-assert [g['grade'] for g in curriculum]==[1,2,3]
+assert [g['grade'] for g in curriculum]==list(range(1,7))
 for grade in curriculum:
     assert [t['term'] for t in grade['terms']]==[1,2]
     for term in grade['terms']:
@@ -64,7 +64,7 @@ for u in units:
     assert u['write']['sample'] and len(u['write']['checklist'])>=3
 assert len(set(all_ids))==len(all_ids)==14*len(units)
 review_ids=[q['id'] for g in curriculum for t in g['terms'] for q in t['review']]
-assert len(set(all_ids+review_ids))==len(all_ids)+36
+assert len(set(all_ids+review_ids))==len(all_ids)+72
 class Page(HTMLParser):
     def __init__(self,s):
         super().__init__(convert_charrefs=True);self.ids=[];self.refs=[];self.h1=0;self.answers=0;self.questions=0;self.forms=0;self.feed(s)
@@ -78,7 +78,7 @@ class Page(HTMLParser):
         if tag=='fieldset':self.questions+=1
         if tag=='form':self.forms+=1
 pages={p:Page(p.read_text()) for p in OUT.rglob('*.html')}
-assert len(pages)==10+3*len(units)+6
+assert len(pages)==10+3*len(units)+12
 for p,page in pages.items():
     assert page.h1==1,p
     assert len(page.ids)==len(set(page.ids)),p
@@ -96,7 +96,7 @@ for p,page in pages.items():
     elif page.forms:
         assert page.forms==5 and page.questions==14 and page.answers==14,p
         assert 'XMLHttpRequest' not in p.read_text()
-        unit=next(u for u in units if f"u{u['number']:02}-{u['slug']}"==p.parent.name)
+        unit=next(u for u in units if OUT/route(u)==p)
         assert p.read_text().count('class="usage-case"')==sum(len(g['cases']) for g in unit['usage_groups'])
         for group in unit['usage_groups']:
             assert 'usage-'+group['id'] in page.ids
@@ -114,12 +114,17 @@ for u in units:
     grade_page=OUT/f'grades/g{u["grade"]}/index.html'
     resolved={(grade_page.parent/urlsplit(r).path).resolve() for r in pages[grade_page].refs if urlsplit(r).path}
     assert path.resolve() in resolved,u['id']
-    if u['grade']<=3:
-        text=path.read_text()
-        assert '單元前後導覽' in text
-        if u['number']<12:assert f'下一課 U{u["number"]+1:02}' in text
-        if u['number']>1:assert f'上一課 U{u["number"]-1:02}' in text
-assert (OUT/'curriculum/grade-1-3.md').read_text().count('##### G')==36
+    text=path.read_text()
+    assert '單元前後導覽' in text
+    if u['number']<12:assert f'下一課 U{u["number"]+1:02}' in text
+    if u['number']>1:assert f'上一課 U{u["number"]-1:02}' in text
+    if u['number'] in [6,12]:assert '學期複習與作品檢核' in text
+    if u['number']==12 and u['grade']<6:assert f'前往 Grade {u["grade"]+1}' in text
+for start,end,count in [(1,3,36),(4,6,36),(1,6,72)]:
+    assert (OUT/f'curriculum/grade-{start}-{end}.md').read_text().count('##### G')==count
 assert not any(term in (OUT/'index.html').read_text() for term in ['3 個單元開放試用','回到三個示範'])
+for g in range(1,7):
+    assert f'grades/g{g}/index.html' in (OUT/'index.html').read_text()
+    assert '課程尚在規劃' not in (OUT/f'grades/g{g}/index.html').read_text()
 examples=sum(len(g['cases']) for u in units for g in u['usage_groups'])
-print(f'PASS: G1–G3 36 units + G5 demo; {examples} contextual examples; {len(all_ids)} lesson questions + 36 term review questions; {len(pages)} pages; prerequisites/order/navigation; all links/anchors; {len(units)} worksheets and separate answer keys.')
+print(f'PASS: G1–G6 72 units; {examples} contextual examples; {len(all_ids)} lesson questions + 72 term review questions; {len(pages)} pages; prerequisites/order/navigation; all links/anchors; {len(units)} worksheets and separate answer keys.')
